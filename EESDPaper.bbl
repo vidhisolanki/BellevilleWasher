@@ -26,7 +26,7 @@ M.~A. Saadeghvaziri, B.~Feizi, L.~Kempner~Jr, and D.~Alston, ``On seismic
   pp.~177--186, 2009.
 
 \bibitem{NBlunt}
-N.~Blunt, ``The difference between disc springs and belleville washers.''
+N.~Blunt, ``{The Difference Between Disc Springs and Belleville Washers}.''
   \url{https://www.spirol.com/assets/files/disc_wp_differences_between_disc_springs_and_belleville_washers_us.pdf}.
 \newblock Accessed: 11-8-2025.
 
@@ -59,8 +59,8 @@ C.~Maletta, L.~Filice, and F.~Furgiuele, ``Niti belleville washers: Design,
   structures}, vol.~24, no.~6, pp.~695--703, 2013.
 
 \bibitem{Solon}
-S.~M. Co., ``Belleville spring washer applications & solutions.''
-  \url{https://www.solonmfg.com/washer-applications}.
+{Solon Manufacturing Co.}, ``{Belleville Spring Washer Applications \&
+  Solutions}.'' \url{https://www.solonmfg.com/washer-applications}.
 \newblock Accessed: 11-8-2025.
 
 \bibitem{fujita1996fundamental}
@@ -102,5 +102,10 @@ K.~Ma, Y.~Zhou, and D.~Lu, ``Theoretical and experimental investigation on disc
 \bibitem{IEEE6931984}
 IEEE recommended practice for seismic design for substations, {\em IEEE Std
   693-1984}, 1984.
+
+\bibitem{KeyBelleville}
+{Key Bellevilles Inc.}, ``Belleville spring washer applications \& solutions.''
+  \url{https://keybellevilles.com/bellevilles/sampleCatalog}.
+\newblock Accessed: 11-8-2025.
 
 \end{thebibliography}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=latex 2026.1.13)  13 JAN 2026 20:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=latex 2026.1.13)  13 JAN 2026 21:17
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -286,8 +286,77 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip57
 ))
-Package hyperref Info: Option `breaklinks' set `true' on input line 14.
- (C:\Program Files\MiKTeX\tex/latex/graphics\graphicx.sty
+Package hyperref Info: Option `breaklinks' set `true' on input line 15.
+
+(C:\Users\solankiv\AppData\Roaming\MiKTeX\tex/latex/matlab-prettifier\matlab-pr
+ettifier.sty
+Package: matlab-prettifier 2014/06/19 v0.3 A package for prettyprinting Matlab 
+source code
+ (C:\Program Files\MiKTeX\tex/latex/base\textcomp.sty
+Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
+)
+(C:\Program Files\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(C:\Program Files\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: dvips.def on input line 274.
+
+(C:\Program Files\MiKTeX\tex/latex/graphics-def\dvips.def
+File: dvips.def 2022/09/22 v3.1e Graphics/color driver for dvips
+)
+(C:\Program Files\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+)
+(C:\Program Files\MiKTeX\tex/latex/listings\listings.sty
+\lst@mode=\count298
+\lst@gtempboxa=\box55
+\lst@token=\toks35
+\lst@length=\count299
+\lst@currlwidth=\dimen163
+\lst@column=\count300
+\lst@pos=\count301
+\lst@lostspace=\dimen164
+\lst@width=\dimen165
+\lst@newlines=\count302
+\lst@lineno=\count303
+\lst@maxwidth=\dimen166
+
+(C:\Program Files\MiKTeX\tex/latex/listings\lstpatch.sty
+File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
+)
+(C:\Program Files\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
+\c@lstnumber=\count304
+\lst@skipnumbers=\count305
+\lst@framebox=\box56
+)
+(C:\Program Files\MiKTeX\tex/latex/listings\listings.cfg
+File: listings.cfg 2024/09/23 1.10c listings configuration
+))
+Package: listings 2024/09/23 1.10c (Carsten Heinz)
+\netBracketCount@mlpr=\count306
+\blkLvl@mlpr=\count307
+\blkLvlAtClassdef@mlpr=\count308
+\emHeight@mlpr=\skip58
+\jayDepth@mlpr=\skip59
+\sectionRuleOffset@mlpr=\skip60
+\toks@mlpr=\toks36
+)
+(C:\Users\solankiv\AppData\Roaming\MiKTeX\tex/latex/cite\cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+)
+(C:\Program Files\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
 (C:\Program Files\MiKTeX\tex/latex/graphics\graphics.sty
@@ -300,55 +369,40 @@ Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: dvips.def on input line 106.
-
-(C:\Program Files\MiKTeX\tex/latex/graphics-def\dvips.def
-File: dvips.def 2022/09/22 v3.1e Graphics/color driver for dvips
-))
-\Gin@req@height=\dimen163
-\Gin@req@width=\dimen164
 )
-(C:\Program Files\MiKTeX\tex/latex/graphics\color.sty
-Package: color 2024/06/23 v1.3e Standard LaTeX Color (DPC)
-
-(C:\Program Files\MiKTeX\tex/latex/graphics-cfg\color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
+\Gin@req@height=\dimen167
+\Gin@req@width=\dimen168
 )
-Package color Info: Driver file: dvips.def on input line 149.
-
-(C:\Program Files\MiKTeX\tex/latex/graphics\dvipsnam.def
-File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
-)
-(C:\Program Files\MiKTeX\tex/latex/graphics\mathcolor.ltx))
 (C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-dvips.def
 File: l3backend-dvips.def 2024-05-08 L3 backend support: dvips
-\l__pdf_internal_box=\box55
-\l__pdf_backend_content_box=\box56
-\l__pdf_backend_model_box=\box57
-\g__pdf_backend_annotation_int=\count298
-\g__pdf_backend_link_int=\count299
-\g__pdf_backend_link_sf_int=\count300
+\l__pdf_internal_box=\box57
+\l__pdf_backend_content_box=\box58
+\l__pdf_backend_model_box=\box59
+\g__pdf_backend_annotation_int=\count309
+\g__pdf_backend_link_int=\count310
+\g__pdf_backend_link_sf_int=\count311
 )
 (EESDPaper.aux)
 \openout1 = `EESDPaper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: dvips
@@ -384,24 +438,25 @@ LaTeX Font Info:    ... okay on input line 34.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 34.
+Package hyperref Info: Link coloring OFF on input line 43.
 (EESDPaper.out) (EESDPaper.out)
 \@outlinefile=\write3
 \openout3 = `EESDPaper.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 36.
+\c@lstlisting=\count312
+LaTeX Font Info:    Trying to load font information for U+msa on input line 45.
 
 
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 36.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 45.
 
 
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 47--59
+Underfull \hbox (badness 10000) in paragraph at lines 56--68
 
  []
 
@@ -410,31 +465,55 @@ Underfull \hbox (badness 10000) in paragraph at lines 47--59
 [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 68--74
+Underfull \hbox (badness 10000) in paragraph at lines 77--80
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--78
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--81
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 82--83
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
 
  []
 
 
 
-[2] (EESDPaper.bbl
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--116
+
+ []
+
+
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--153
+
+ []
+
+(EESDPaper.bbl
+
+[4]
 Underfull \hbox (badness 10000) in paragraph at lines 29--32
-[][]\OT1/cmr/m/n/10 N. Blunt, ``The dif-fer-ence be-tween disc springs and bell
-eville wash-ers.''
+[][]\OT1/cmr/m/n/10 N. Blunt, ``The Dif-fer-ence Be-tween Disc Springs and Bell
+eville Wash-ers.''
  []
 
 
@@ -443,35 +522,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--32
 p[]dierences[]between[]disc[]springs[]and[]belleville[]
  []
 
-! Misplaced alignment tab character &.
-l.62 ... ``Belleville spring washer applications &
-                                                   solutions.''
-? 
 
 Underfull \hbox (badness 10000) in paragraph at lines 62--65
-[][]\OT1/cmr/m/n/10 S. M. Co., ``Belleville spring washer ap-pli-ca-tions  so-l
-u-tions.''
+[][]\OT1/cmr/m/n/10 Solon Man-u-fac-tur-ing Co., ``Belleville Spring Washer Ap-
+pli-ca-tions & So-lu-tions.''
  []
 
 
 
-[3])
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 107--110
+[][]\OT1/cmr/m/n/10 Key Bellevilles Inc., ``Belleville spring washer ap-pli-ca-
+tions & so-lu-tions.''
+ []
 
-[4] (EESDPaper.aux)
+)
+
+[6] (EESDPaper.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-11-02>
  ***********
 Package rerunfilecheck Info: File `EESDPaper.out' has not changed.
-(rerunfilecheck)             Checksum: 9814C2D956916ADB9290ECA4E25C967A;103.
+(rerunfilecheck)             Checksum: E1472807BE79BD4F4F45D74BD52C36AE;1451.
  ) 
 Here is how much of TeX's memory you used:
- 10032 strings out of 473651
- 152446 string characters out of 5727977
- 570747 words of memory out of 5000000
- 33018 multiletter control sequences out of 15000+600000
- 566947 words of font info for 70 fonts, out of 8000000 for 9000
+ 12048 strings out of 473651
+ 182662 string characters out of 5727977
+ 609203 words of memory out of 5000000
+ 35012 multiletter control sequences out of 15000+600000
+ 567589 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,79p,1752b,554s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,11n,79p,1752b,552s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on EESDPaper.dvi (4 pages, 36460 bytes).
+Output written on EESDPaper.dvi (6 pages, 53228 bytes).

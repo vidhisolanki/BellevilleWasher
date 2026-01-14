@@ -6,6 +6,7 @@
 \usepackage{amsmath}
 \usepackage{amsthm}
 \usepackage{amssymb}
+%\usepackage{parskip}
 
 % Unicode
 \usepackage[utf8]{inputenc}
@@ -13,8 +14,15 @@
 \usepackage{hyperref}
 \hypersetup{breaklinks=true}
 \urlstyle{same}
+\usepackage{matlab-prettifier}
 
-
+\usepackage{cite}
+\lstset{
+  style              = Matlab-editor,
+  basicstyle         = \mlttfamily,
+  escapechar         = ",
+  mlshowsectionrules = true,
+}
 % Natbib
 \bibliographystyle{ieeetr}
 
@@ -30,6 +38,7 @@
 %	$^2$Organization 2 \\ \texttt{auth3@inst2.edu}\\[2ex]%
 %	\today
 %}
+\setlength{\parindent}{0pt}
 
 \begin{document}
 	\maketitle
@@ -43,7 +52,7 @@ Seattle City Light (SCL), a power utility in the Pacific Northwest where there i
 
 	
 \section{Introduction}	\label{sec:intro}
-
+\subsection{Background and objectives}
 Base isolation and supplemental damping systems are now widely used as seismic protective 
 systems in structures. They represent a design philosophy that seeks to reduce seismic demand 
 on functional structural components, and to minimize if not eliminate damage and permanent 
@@ -65,29 +74,84 @@ is given by \cite{shigley2004standard, almen1936uniform}
   F=\frac{E\delta}{(1-\mu^2)Ma^2}\left[(h-\delta)\left(h-\frac{\delta}{2}\right)t+t^3\right]
 \end{equation}
 
-where $F$ and $\delta$ are the force in the washer and deflection, $E$ and $\mu$ are the Young’s modulus and Poisson ratio of the washer material, $M$ is a constant that depends on the ratio of outer to inner diameters (see \cite{shigley2004standard} for a chart), $a$ is the outer radius and $h$ and $t$ are the dimension shown in 
-Figure 1-1. Depending on the $h$/$t$ ratio, equation \eqref{eqn:forcedispwasher} implies a wide variety force-displacement 
-behaviors as shown in Figure 1-2. As a point of reference, the washers used in the present project are listed in Table 1-1. The K1875-G-086 washer has a $h$/$t$ ratio of 0.5, which corresponds to 
-almost linear behavior till flattening. The K1750-J-057 washer on the other hand has a $h$/$t$ ratio of 1.0 resulting in a force-displacement curve that softens significantly before flattening. These behaviors are reflected in the test results in Chapter 3. Specific features of the force-displacement behavior can be exploited\footnote{for example, by preloading washers of $h$/$t$ of about 1.5 have nearly zero stiffness at flattening; so by preloading such washers to flattening and providing spacing to deformed beyond flattening, an isolation system with nearly 
-zero frequency can be achieved (see for example \cite{korytov2022use}). Such approaches are not pursued in the present project but offer possibilities to consider in the future.
-}. An even wider range of behavior has been explored using Belleville washers made of shape-memory materials \cite{maletta2013niti}.\\
+where $F$ and $\delta$ are the force in the washer and deflection, $E$ and $\mu$ are the Young’s modulus and Poisson ratio of the washer material, $M$ is a constant that depends on the ratio of outer to inner diameters (see \cite{shigley2004standard} for a chart), $a$ is the outer radius and $h$ and $t$ are the dimension shown in Figure 1-1. Depending on the $h$/$t$ ratio, equation \eqref{eqn:forcedispwasher} implies a wide variety force-displacement 
+behaviors as shown in Figure 1-2. As a point of reference, the washers used in the present project are listed in Table 1-1. The K1875-G-086 washer has a $h$/$t$ ratio of 0.5, which corresponds to almost linear behavior till flattening. The K1750-J-057 washer on the other hand has a $h$/$t$ ratio of 1.0 resulting in a force-displacement curve that softens significantly before flattening. These behaviors are reflected in the test results in Chapter 3. Specific features of the force-displacement behavior can be exploited\footnote{for example, by preloading washers of $h$/$t$ of about 1.5 have nearly zero stiffness at flattening; so by preloading such washers to flattening and providing spacing to deformed beyond flattening, an isolation system with nearly 
+zero frequency can be achieved (see for example \cite{korytov2022use}). Such approaches are not pursued in the present project but offer possibilities to consider in the future.}. An even wider range of behavior has been explored using Belleville washers made of shape-memory materials \cite{maletta2013niti}.\\
 
-Belleville washers have been used in a number of industries for vibration isolation/absorption applications (see for example \cite{Solon}). This includes seismic protective systems. Use of large Belleville washers (referred to therein as coned disc springs) for vertically isolation of the reactor vessel and other components in a horizontally isolated nuclear power plant building was 
-discussed in references \cite{fujita1996fundamental, kitamura2003experimental, kitamura2005experimental}. Belleville washers have been used to maintain bolt tension in frictional sliding structural connections \cite{ramhormozian2017stiffness}. Shape memory Belleville washers have also been considered for energy-dissipating braces in structures \cite{speicher2009shape}. The closely related concept of ring springs has been studied for seismic isolation in \cite{hill1995utility}. Use of Belleville washers for vertical 
-isolation of buildings under train-induced vibration has been studied in \cite{ma2023theoretical}; in this paper, the different force-displacement responses of Figure 1-2 are properly utilized and a thorough analysis of hysteretic behavior (cf. Chapter 3 in this report) is presented.\\
+Belleville washers have been used in a number of industries for vibration isolation/absorption applications (see for example \cite{Solon}). This includes seismic protective systems. Use of large Belleville washers (referred to therein as coned disc springs) for vertically isolation of the reactor vessel and other components in a horizontally isolated nuclear power plant building was discussed in references \cite{fujita1996fundamental, kitamura2003experimental, kitamura2005experimental}. Belleville washers have been used to maintain bolt tension in frictional sliding structural connections \cite{ramhormozian2017stiffness}. Shape memory Belleville washers have also been considered for energy-dissipating braces in structures \cite{speicher2009shape}. The closely related concept of ring springs has been studied for seismic isolation in \cite{hill1995utility}. Use of Belleville washers for vertical isolation of buildings under train-induced vibration has been studied in \cite{ma2023theoretical}; in this paper, the different force-displacement responses of Figure 1-2 are properly utilized and a thorough analysis of hysteretic behavior (cf. Chapter 3 in this report) is presented.\\
 
-The first suggestion of using Belleville washers for seismic protection of substation equipment was in a report prepared for Bonneville Power Administration \cite{couch1973procedures}. The suggestion was made in the context of lightning arresters. The 1984 edition of IEEE 693 \cite{IEEE6931984} briefly mentions the 
-possibility of Belleville washers for seismic protection, but this was removed in subsequent edition. Seattle City Light has been installing Belleville washer stacks for seismic protection of their equipment; the present research was driven by this.\\
+The first suggestion of using Belleville washers for seismic protection of substation equipment was in a report prepared for Bonneville Power Administration \cite{couch1973procedures}. The suggestion was made in the context of lightning arresters. The 1984 edition of IEEE 693 \cite{IEEE6931984} briefly mentions the possibility of Belleville washers for seismic protection, but this was removed in subsequent edition. Seattle City Light has been installing Belleville washer stacks for seismic protection of their equipment; the present research was driven by this.\\
 
 The goal of this project is to study the effectiveness of Belleville washers for seismic protection of equipment such as capacitive voltage transformers (CVT), capacitor banks etc. that do not have moving parts (such as in switches) and do not have complex dynamic modes of their own (such as dead tank circuit breakers). Such equipment, when mounted on support structures, essentially behave as rigid bodies rocking under horizontal ground motion due to the flexibility of the support structure. When Belleville washer stacks are installed at the base of such equipment, above the support structure, the equipment will rock under horizontal ground motion relative to the support structure. The Belleville washer stacks are expected to provide damping through frictional dissipation under such motion, resulting in reduction of equipment base moment relative when they are rigidly connected to the support structure. In deforming to provide frictional dissipation, the washer stacks will also invariably reduce the frequency; this reduction may further aid in reducing base moment. This could potentially occur at the expense of increased terminal deflection that must be accommodated.\\
 
 The objectives of this project are:
 \begin{enumerate}
-  \item Develop an analysis-based systematic approach for design of a Belleville-washer seismic protective system for a given equipment (together with given seismic demand and support structure).
+  \item Develop an analysis-based systematic approach for design of a Belleville washer seismic protective system for a given equipment (together with given seismic demand and support structure).
   \item Develop support for such an approach through physical experiments.
 \end{enumerate}
 A CVT provided by Seattle City Light (see --) is used in the shake table experiments described in Chapter 4.
 
+\subsection{Nomenclature for washer configurations}
+
+The specific washers used in the project are from Key Bellevilles \cite{KeyBelleville} and are listed in Table 1-1.
+%%%%%%%%% table 1-1
+Table 1-2 summarizes the nomenclature used in this report for Belleville washer units, each consisting of series parallel arrangements. A stack is identified by the number and type of units, 
+for example as illustrated in Table 1-2.
+%%%%%%%% table 1-2
+Then washers are nested with the cones oriented in the same direction, as for example in the top or bottom half of a 2U2D unit, they act in parallel since when a load is applied, their deformations are the same. When the cone orientations are opposite, as for example with the two washers in a 1U1D unit, they are in series, since they see the same force and their deformations are additive. Thus, a stack can be viewed as a series-parallel arrangement of washers. If the washers were ideal springs, the stiffness of a stack can be calculated using series-parallel combinations of the stiffnesses of the constituent springs (as will be seen in Chapter 3, washers, particularly when nested are not linear springs and exhibit hysteresis, so such a calculation of stiffness would only be approximate). The strength (flattening load) of a stack is determined by the weakest parallel combination in the stack.
+
+\subsection{Analysis and design questions}
+The findings reported here must ultimately guide the selection of washer stacks the provide the desired level of seismic protection. This is the design question, given (a) an equipment, (b) its support structure, (c) seismic input (design spectrum) and (d) performance specifications (max base moment, max terminal displacement etc.), design a Belleville washer stack so that the system response meets the specifications.\\
+
+A prerequisite to approaching this design question is being able to answer the analysis question, given (a) an equipment, (b), its support structure, (c) seismic input (ground motion record) and 1-6 (d) a specific Belleville washer configuration, compute the response of this system (accelerations, base moments, terminal displacements etc.). Hence the emphasis of this project is more on this analysis question and support for the analysis process from physical experimental measurements, with a focus as noted above on “rigid” structures, in particular a CVT.
+
+\subsection{Organization of the report}
+This report is organized as follows. As noted above, the main goal of this project is to develop an analysis-based systematic approach for design of a Belleville-washer seismic protective system. The report is therefore structured around an analysis procedure. This procedure is summarized upfront in Chapter 2, and the various steps in this procedure are expounded in subsequent chapters. Characterizing the force-displacement hysteresis of a single stack of washers through 
+cyclic loading tests is presented in Chapter 3. Shake table experiments to characterized dynamic seismic response of a CVT equipment with Belleville washer stacks, including setup, instrumentation and specific steps for installing the washer stacks, are described in Chapter 4. In Chapter 5, a nonlinear dynamic model of the CVT with Belleville washer stacks is developed, and predictions from the model are compared with measurements from shake table experiments. An important note is that all the information needed for this model can be obtained from the washer characterization data from Chapter 3, the type of information that can be readily obtained. In Chapter 6, a linearized model based on equivalent stiffness and damping is developed that may be more conducive for practical use than the nonlinear model in Chapter 5; this linear model can also be developed simply for the characterization data in Chapter 3. The 
+approach taken in this report to analyze substation equipment with Belleville washer seismic protective systems loosely parallels that in ASCE 7 for seismically isolated structures; this is pointed out in Chapter 6 to lend credence to the proposed approach relative to well-established procedures in seismic standards. Finally in Chapter 7, a summary is provided, and some outstanding questions are identified.
+
+\section{Proposed analysis procedure}
+The main goal of this project is to develop an analysis-based systematic approach for design of a Belleville washer seismic protective system. Therefore, in this chapter, a proposed analysis 
+procedure is laid out. This serves to tie together the different steps and experimental support for these steps discussed in subsequent chapters. The following is the proposed analysis procedure:\\
+
+\noindent Given (a) an equipment, (b) its support structure, (c) seismic input (ground motion record), (d) 
+Belleville washer configuration
+\begin{enumerate}
+  \item Determine the force-displacement response of the stack.
+  \begin{itemize}
+    \item In this project, we have done this by testing the stack in a material test machine (see Chapter 3).
+    \item This is a hysteretic behavior.
+  \end{itemize}
+  \item Compute the moment-rotation behavior of the assembly of washer stacks (see Chapter 5).
+      \begin{itemize}
+        \item This can be done, for example, in an Excel spreadsheet.
+        \item In this project, special instrumentation has been used to experimentally verify the relationship between the stack force-displacement behavior and the system moment-rotation behavior (see Chapter 4).
+      \end{itemize}
+  \item Model this moment-rotation behavior – two possible approaches.
+      \begin{itemize}
+        \item Fit a hysteresis model (Chapter 5).
+        \item Compute an “equivalent” stiffness and damping (Chapter 6).
+        \item Both approaches have been verified in this project; it has also been verified that this equivalent stiffness and damping agrees well with fitting a linear model to the 
+measured response.
+      \end{itemize}
+  \item Compute the system response – three approaches are possible.
+  \begin{itemize}
+    \item  Nonlinear time-history analysis with the hysteresis model for the washer arrangement (Chapter 5).
+    \item Linear time history analysis with the equivalent stiffness and damping.
+    \item Response spectrum analysis with the equivalent stiffness and damping ((Chapter 6). This together with the equivalent stiffness and damping resemble ASCE 7 process for base isolation (Chapter -)
+    \item In the project, it has been verified that the three approaches produce close responses.
+  \end{itemize}
+\end{enumerate}
+
+\section{Cyclic force-displacement behavior of washer stacks}
+This chapter is on the measurement of force-displacement behavior of Belleville washer stacks. As will be seen in Chapters 5 and 6, this is the primary information required to predict the seismic response of rigid equipment (besides mass, moment of inertia of the equipment itself and support structure stiffness).\\
+
+The force displacement response of a washer stack is obtained here by applying cyclic compressive loading to the stack in a materials testing machine. At first, this was done by simply compressing the stack between loading plates as shown in Figure 3-1(a). The resulting force-displacement curves of Figure 3-1(b) showed changes in slope that weren’t observed in force-displacement measurements of the same stack in shake table tests (the special instrument designed to measure this response in situ under the equipment in the shake table test is discussed in Chapter 4). This is likely because of slight misalignment between washers in the stack initially that corrects itself during the loading. To avoid this, an alternative approach was devised, where 
+the compressive loading was applied to the stack through a loading frame and guiding rod as illustrated in Figure 3-2(a). This arrangement is closer to how the washer stack is installed under 
+the equipment. The guiding rod prevents any initial misalignment and subsequent realignment. The resulting force-displacement measurement, shown in Figure 3-2(b), does not have any unexpected changes in slope. Indeed the in situ measurements from the shake table tests follow 
+these curves closely as seen in Figure 3-3.\\
+
+Figure 3-4 shows force-displacement curves for two configurations of the K1750-J-057 washers. They exhibit the reduction in stiffness with loading noted in Figure 1-2 due to their higher $h$/$t$ ratio
 %\bibliographystyle{IEEEtran}
 \bibliography{References}
 	
