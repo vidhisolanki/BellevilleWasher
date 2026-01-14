@@ -8,6 +8,7 @@
 \usepackage{amssymb}
 \usepackage{subcaption}%%% for using subfigures
 \usepackage{booktabs} %%% for toprule, bottomrule in tables
+\usepackage{multirow, makecell}
 
 % Unicode
 \usepackage[utf8]{inputenc}
@@ -61,7 +62,7 @@ When washers are nested such that the bottom surface of one is placed on the top
 is given by \cite{shigley2004standard, almen1936uniform}
 
 \begin{figure}
-    \begin{subfigure}[b]{0.5\textwidth}
+    \begin{subfigure}[b]{0.45\textwidth}
     \centering
         \includegraphics[width = \textwidth]{Onewasher.eps}
         \caption{Shape and dimension specifications (source: \cite{shigley2004standard})}
@@ -73,7 +74,6 @@ is given by \cite{shigley2004standard, almen1936uniform}
         \caption{Example of a stack with series-parallel arrangement}
         \label{fig:Photo2units2U2D}
     \end{subfigure}
-    \vspace{-2em}
     \caption{Belleville washer shape, dimensions and stack consisting of series-parallel arrangement}
     \label{fig:Washerstack}
 \end{figure}
@@ -125,7 +125,26 @@ K1750-J-057 & 1.750 & 0.88 & 0.057 & 0.057 & 650 \\
 
 Table 1-2 summarizes the nomenclature used in this report for Belleville washer units, each consisting of series parallel arrangements. A stack is identified by the number and type of units, 
 for example as illustrated in Table 1-2.
-%%%%%%%% table 1-2
+
+
+\begin{table}
+\caption{\label{tab:washernomenclature} Nomenclature used for Belleville washer units and stacks}
+\begin{center}   
+\begin{tabular}{cccm{5em}} 
+ \toprule
+ \multicolumn{3}{c}{Units} & \multirow{2}{*}{Stack} \\
+ Sr. No. & Configuration & Nomenclature & \\
+ 1 & \resizebox{0.2\textwidth}{!}{\includegraphics{washer1U.eps}} & 1U & \multirow{5}{*}{\resizebox{0.2\textwidth}{!}{\includegraphics{washer2unit2U2D.eps}}}\\
+ 2 & \resizebox{0.2\textwidth}{!}{\includegraphics{washer1D.eps}} & 1D & \\
+ 3 & \resizebox{0.2\textwidth}{!}{\includegraphics{washer1U1D.eps}} & 1U1D & \\
+ 4 & \resizebox{0.2\textwidth}{!}{\includegraphics{washer1unit2U2D.eps}} & 2U2D & \\
+ 5 & \resizebox{0.2\textwidth}{!}{\includegraphics{washer1unit3U3D.eps}} & 3U3D & \\
+\bottomrule
+%\multicolumn{3}{l}{\small{$^1$Obtained from \cite{kote2019model}}}
+\end{tabular}
+\end{center}
+\end{table}
+
 Then washers are nested with the cones oriented in the same direction, as for example in the top or bottom half of a 2U2D unit, they act in \textit{parallel} since when a load is applied, their deformations are the same. When the cone orientations are opposite, as for example with the two washers in a 1U1D unit, they are in series, since they see the same force and their deformations are additive. Thus, a stack can be viewed as a series-parallel arrangement of washers. If the washers were ideal springs, the stiffness of a stack can be calculated using series-parallel combinations of the stiffnesses of the constituent springs (as will be seen in section \ref{sec:washerstackforcedisp}), washers, particularly when nested are not linear springs and exhibit hysteresis, so such a calculation of stiffness would only be approximate). The strength (flattening load) of a stack is determined by the weakest parallel combination in the stack.
 
 \subsection{Analysis and design questions}\label{subsec:analysisdesignquestions}

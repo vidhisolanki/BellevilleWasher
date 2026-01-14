@@ -6,8 +6,9 @@ R.~Couch and R.~Deacon, ``Procedures and criteria for increasing the earthquake
   rep., Agbabian Associates, El Segundo, CA (USA), 1973.
 
 \bibitem{cochran2015seismic}
-R.~Cochran, ``Seismic base isolation of a high voltage transformer,'' in {\em
-  Electrical Transmission and Substation Structures 2015}, pp.~413--425, 2015.
+R.~S. Cochran, ``Seismic base isolation of a high voltage transformer,'' in
+  {\em Electrical Transmission and Substation Structures 2015}, pp.~413--425,
+  2015.
 
 \bibitem{Kempner2015isolation}
 L.~Kempner~Jr. and M.~Riley, ``High voltage transformer base isolation,'' in
@@ -92,7 +93,9 @@ M.~Speicher, D.~E. Hodgson, R.~DesRoches, and R.~T. Leon, ``Shape memory alloy
   2009.
 
 \bibitem{hill1995utility}
-K.~E. Hill, ``The utility of ring springs in seismic isolation systems,'' 1995.
+K.~E. Hill, {\em The utility of ring springs in seismic isolation systems}.
+\newblock Phd thesis, University of Canterbury, Department of Mechanical
+  Engineering, Christchurch, New Zealand, 1995.
 
 \bibitem{ma2023theoretical}
 K.~Ma, Y.~Zhou, and D.~Lu, ``Theoretical and experimental investigation on disc
