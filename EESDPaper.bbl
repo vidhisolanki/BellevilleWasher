@@ -1,0 +1,50 @@
+\begin{thebibliography}{10}
+
+\bibitem{couch1973procedures}
+R.~Couch and R.~Deacon, ``Procedures and criteria for increasing the earthquake
+  resistance level of electrical substations and special installations,'' tech.
+  rep., Agbabian Associates, El Segundo, CA (USA), 1973.
+
+\bibitem{cochran2015seismic}
+R.~Cochran, ``Seismic base isolation of a high voltage transformer,'' in {\em
+  Electrical Transmission and Substation Structures 2015}, pp.~413--425, 2015.
+
+\bibitem{Kempner2015isolation}
+L.~Kempner~Jr. and M.~Riley, ``High voltage transformer base isolation,'' in
+  {\em Proceedings of the 11th Canadian Conference on Earthquake Engineering},
+  2015.
+
+\bibitem{oikonomou2016seismic}
+K.~Oikonomou, M.~C. Constantinou, A.~M. Reinhorn, and L.~Kempner~Jr, ``Seismic
+  isolation of high voltage electrical power transformers,'' {\em MCEER
+  Techincal Report MCEER-16}, vol.~6, 2016.
+
+\bibitem{saadeghvaziri2009seismic}
+M.~A. Saadeghvaziri, B.~Feizi, L.~Kempner~Jr, and D.~Alston, ``On seismic
+  response of substation equipment and application of base isolation to
+  transformers,'' {\em IEEE Transactions on power delivery}, vol.~25, no.~1,
+  pp.~177--186, 2009.
+
+\bibitem{NBlunt}
+N.~Blunt, ``The difference between disc springs and belleville washers.''
+  \url{https://www.spirol.com/assets/files/disc_wp_differences_between_disc_springs_and_belleville_washers_us.pdf}.
+\newblock Accessed: 11-8-2025.
+
+\bibitem{shigley2004standard}
+J.~E. Shigley and C.~R. Mischke, ``Standard handbook of machine design,'' {\em
+  (No Title)}, 2004.
+
+\bibitem{ashworth1946disk}
+G.~Ashworth, ``The disk spring or belleville washer,'' {\em Proceedings of the
+  Institution of Mechanical Engineers}, vol.~155, no.~1, pp.~93--100, 1946.
+
+\bibitem{almen1936uniform}
+J.~O. Almen and A.~Laszlo, ``The uniform-section disk spring,'' {\em Journal of
+  Fluids Engineering}, vol.~58, no.~4, pp.~305--314, 1936.
+
+\bibitem{zhou2023modeling}
+Y.~Zhou, D.~Wang, Z.~Qiu, Z.~Wei, W.~Chen, and R.~Zhu, ``Modeling of disc
+  springs based on energy method considering asymmetric frictional boundary,''
+  {\em Thin-Walled Structures}, vol.~190, p.~110971, 2023.
+
+\end{thebibliography}

@@ -9,10 +9,14 @@
 
 % Unicode
 \usepackage[utf8]{inputenc}
+\usepackage[hyphens]{url}
 \usepackage{hyperref}
+\hypersetup{breaklinks=true}
+\urlstyle{same}
+
 
 % Natbib
-\bibliographystyle{ieeestr}
+\bibliographystyle{ieeetr}
 
 \usepackage{graphicx, color}
 \graphicspath{{Figures/}}
@@ -40,7 +44,37 @@ Seattle City Light (SCL), a power utility in the Pacific Northwest where there i
 	
 \section{Introduction}	\label{sec:intro}
 
-\bibliographystyle{IEEEtran}
-\bibliography{../References}
+Base isolation and supplemental damping systems are now widely used as seismic protective 
+systems in structures. They represent a design philosophy that seeks to reduce seismic demand 
+on functional structural components, and to minimize if not eliminate damage and permanent 
+deformation even under large earthquakes. This is in contrast to the conventional seismic design 
+philosophy, wherein structural components are designed to be ductile, and undergo permanent 
+deformation without failure. For critical structures and equipment, such as in electrical 
+substations, the approach of reducing seismic demand and permanent deformations is more 
+attractive to ensure continued functioning of such structures and equipment post-earthquake. The 
+concept of frequency modification for substation equipment was recommended as early as 1973 
+in a report prepared for Bonneville Power Administration (BPA) \cite{couch1973procedures}. Base isolation and 
+supplemental damping systems are being increasingly deployed in substations for seismic 
+protection \cite{cochran2015seismic, Kempner2015isolation, oikonomou2016seismic, saadeghvaziri2009seismic}.\\
+
+One approach to modifying frequency and adding damping is using stacks of Belleville washers. 
+Belleville washers, named after Julian Belleville, who patented them in 1867, are circular 
+washers given a taper to form a conical shape (Figure --). They are also known as a disc 
+springs or conical spring washers, although the term “disc springs” may be more appropriate \cite{NBlunt}
+for the type of dynamic application considered in this report. When a compressive load is applied 
+along the axis, the washer flattens by way of elastic deformation, resulting in spring action \cite{shigley2004standard}. 
+When washers are nested such that the bottom surface of one is placed on the top surface of the 
+next, frictional rubbing between these surfaces results in hysteretic behavior (see Chapter 3), and
+hence energy dissipation. The washers can also be stacked in different ways as illustrated in 
+Figure 1 and Table 1-2. Thus the stiffness and dissipation of a stack of Belleville washers can 
+be tuned. Testing discussed further in Chapter 3 has shown that the force-displacement hysteresis 
+of washer stacks is stable and repeatable. These stacks therefore lend themselves to modeling, 
+and use as engineered frequency modification and energy dissipation devices.
+For early analyses of the mechanical behavior of Belleville washers, see \cite{ashworth1946disk, almen1936uniform}, considering both 
+single washer and nesting. For a more recent study on the analysis of washer mechanical 
+behavior, see \cite{zhou2023modeling} and the references therein. The force-displacement behavior of a single washer 
+is given by \cite{shigley2004standard, almen1936uniform}
+%\bibliographystyle{IEEEtran}
+\bibliography{References}
 	
-\end{document}
+\end{document} 
