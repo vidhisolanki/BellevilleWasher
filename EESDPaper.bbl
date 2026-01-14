@@ -31,8 +31,8 @@ N.~Blunt, ``The difference between disc springs and belleville washers.''
 \newblock Accessed: 11-8-2025.
 
 \bibitem{shigley2004standard}
-J.~E. Shigley and C.~R. Mischke, ``Standard handbook of machine design,'' {\em
-  (No Title)}, 2004.
+J.~E. Shigley and C.~R. Mischke, {\em Standard handbook of machine design}.
+\newblock New York, NY: McGraw-Hill, 2004.
 
 \bibitem{ashworth1946disk}
 G.~Ashworth, ``The disk spring or belleville washer,'' {\em Proceedings of the
@@ -46,5 +46,61 @@ J.~O. Almen and A.~Laszlo, ``The uniform-section disk spring,'' {\em Journal of
 Y.~Zhou, D.~Wang, Z.~Qiu, Z.~Wei, W.~Chen, and R.~Zhu, ``Modeling of disc
   springs based on energy method considering asymmetric frictional boundary,''
   {\em Thin-Walled Structures}, vol.~190, p.~110971, 2023.
+
+\bibitem{korytov2022use}
+M.~Korytov, V.~Shcherbakov, V.~Titenko, I.~Kashapova, and V.~Derkach, ``Use of
+  the belleville spring package in the vibration protection mechanism of the
+  operator’s seat,'' in {\em Journal of Physics: Conference Series},
+  vol.~2182, p.~012056, IOP Publishing, 2022.
+
+\bibitem{maletta2013niti}
+C.~Maletta, L.~Filice, and F.~Furgiuele, ``Niti belleville washers: Design,
+  manufacturing and testing,'' {\em Journal of intelligent material systems and
+  structures}, vol.~24, no.~6, pp.~695--703, 2013.
+
+\bibitem{Solon}
+S.~M. Co., ``Belleville spring washer applications & solutions.''
+  \url{https://www.solonmfg.com/washer-applications}.
+\newblock Accessed: 11-8-2025.
+
+\bibitem{fujita1996fundamental}
+T.~Fujita, ``Fundamental study of three-dimensional seismic isolation system
+  for nuclear power plants,'' in {\em Proceedings of Eleventh World Conference
+  on Earthquake Engineering, 1996-6}, vol.~5, 1996.
+
+\bibitem{kitamura2003experimental}
+S.~Kitamura, T.~Nakatogawa, A.~Miyamoto, and T.~Somaki, ``Experimental study on
+  coned disk springs for vertical seismic isolation system,'' {\em Transaction
+  of the 17th SMiRT, Prague, Czech Republic, August, Division K, Paper\# K10},
+  vol.~2, 2003.
+
+\bibitem{kitamura2005experimental}
+S.~Kitamura, S.~Okamura, and K.~Takahashi, ``Experimental study on vertical
+  component seismic isolation system with coned disk spring,'' in {\em ASME
+  Pressure Vessels and Piping Conference}, vol.~41936, pp.~175--182, 2005.
+
+\bibitem{ramhormozian2017stiffness}
+S.~Ramhormozian, G.~C. Clifton, G.~A. MacRae, and G.~P. Davet,
+  ``Stiffness-based approach for belleville springs use in friction sliding
+  structural connections,'' {\em Journal of Constructional Steel Research},
+  vol.~138, pp.~340--356, 2017.
+
+\bibitem{speicher2009shape}
+M.~Speicher, D.~E. Hodgson, R.~DesRoches, and R.~T. Leon, ``Shape memory alloy
+  tension/compression device for seismic retrofit of buildings,'' {\em Journal
+  of materials engineering and performance}, vol.~18, no.~5, pp.~746--753,
+  2009.
+
+\bibitem{hill1995utility}
+K.~E. Hill, ``The utility of ring springs in seismic isolation systems,'' 1995.
+
+\bibitem{ma2023theoretical}
+K.~Ma, Y.~Zhou, and D.~Lu, ``Theoretical and experimental investigation on disc
+  spring isolation system with loading rings,'' {\em Soil Dynamics and
+  Earthquake Engineering}, vol.~165, p.~107655, 2023.
+
+\bibitem{IEEE6931984}
+IEEE recommended practice for seismic design for substations, {\em IEEE Std
+  693-1984}, 1984.
 
 \end{thebibliography}
