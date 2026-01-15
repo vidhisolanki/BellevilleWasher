@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=latex 2026.1.14)  14 JAN 2026 15:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=latex 2026.1.14)  14 JAN 2026 16:09
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -188,34 +188,20 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@lastruleclass=\count305
 \@thisrulewidth=\dimen186
 )
-(C:\Users\solankiv\AppData\Roaming\MiKTeX\tex/latex/multirow\multirow.sty
-Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
-\multirow@colwidth=\skip57
-\multirow@cntb=\count306
-\multirow@dima=\skip58
-\bigstrutjot=\dimen187
-)
-(C:\Users\solankiv\AppData\Roaming\MiKTeX\tex/latex/makecell\makecell.sty
-Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
-
 (C:\Program Files\MiKTeX\tex/latex/tools\array.sty
 Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
-\col@sep=\dimen188
+\col@sep=\dimen187
 \ar@mcellbox=\box55
-\extrarowheight=\dimen189
+\extrarowheight=\dimen188
 \NC@list=\toks30
-\extratabsurround=\skip59
-\backup@length=\skip60
+\extratabsurround=\skip57
+\backup@length=\skip58
 \ar@cellbox=\box56
-)
-\rotheadsize=\dimen190
-\c@nlinenum=\count307
-\TeXr@lab=\toks31
 )
 (C:\Program Files\MiKTeX\tex/latex/base\inputenc.sty
 Package: inputenc 2024/02/08 v1.3d Input encoding file
-\inpenc@prehook=\toks32
-\inpenc@posthook=\toks33
+\inpenc@prehook=\toks31
+\inpenc@posthook=\toks32
 )
 (C:\Program Files\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip18
@@ -263,19 +249,19 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 (C:\Users\solankiv\AppData\Roaming\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count308
+\c@section@level=\count306
 )
 (C:\Program Files\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count309
+\etb@tempcnta=\count307
 )
 (C:\Users\solankiv\AppData\Roaming\MiKTeX\tex/generic/stringenc\stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
-\@linkdim=\dimen191
-\Hy@linkcounter=\count310
-\Hy@pagecounter=\count311
+\@linkdim=\dimen189
+\Hy@linkcounter=\count308
+\Hy@pagecounter=\count309
 
 (C:\Program Files\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
@@ -285,7 +271,7 @@ Now handling font encoding PD1 ...
 (C:\Users\solankiv\AppData\Roaming\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count312
+\Hy@SavedSpaceFactor=\count310
 
 (C:\Program Files\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
@@ -299,9 +285,9 @@ Package hyperref Info: Plain pages OFF on input line 4210.
 Package hyperref Info: Backreferencing OFF on input line 4215.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4462.
-\c@Hy@tempcnt=\count313
+\c@Hy@tempcnt=\count311
 LaTeX Info: Redefining \url on input line 4801.
-\XeTeXLinkMargin=\dimen192
+\XeTeXLinkMargin=\dimen190
 
 (C:\Users\solankiv\AppData\Roaming\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -310,9 +296,9 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count314
-\Field@Width=\dimen193
-\Fld@charsize=\dimen194
+\Fld@menulength=\count312
+\Field@Width=\dimen191
+\Fld@charsize=\dimen192
 Package hyperref Info: Hyper figures OFF on input line 6078.
 Package hyperref Info: Link nesting OFF on input line 6083.
 Package hyperref Info: Hyper index ON on input line 6086.
@@ -320,9 +306,9 @@ Package hyperref Info: backreferencing OFF on input line 6093.
 Package hyperref Info: Link coloring OFF on input line 6098.
 Package hyperref Info: Link coloring with OCG OFF on input line 6103.
 Package hyperref Info: PDF/A mode OFF on input line 6108.
-\Hy@abspage=\count315
-\c@Item=\count316
-\c@Hfootnote=\count317
+\Hy@abspage=\count313
+\c@Item=\count314
+\c@Hfootnote=\count315
 )
 Package hyperref Info: Driver (default): hdvips.
  (C:\Program Files\MiKTeX\tex/latex/hyperref\hdvips.def
@@ -330,13 +316,13 @@ File: hdvips.def 2025-07-12 v7.01o Hyperref driver for dvips
 
 (C:\Program Files\MiKTeX\tex/latex/hyperref\pdfmark.def
 File: pdfmark.def 2025-07-12 v7.01o Hyperref definitions for pdfmark specials
-\pdf@docset=\toks34
+\pdf@docset=\toks33
 \pdf@box=\box57
-\pdf@toks=\toks35
-\pdf@defaulttoks=\toks36
-\HyField@AnnotCount=\count318
-\Fld@listcount=\count319
-\c@bookmark@seq@number=\count320
+\pdf@toks=\toks34
+\pdf@defaulttoks=\toks35
+\HyField@AnnotCount=\count316
+\Fld@listcount=\count317
+\c@bookmark@seq@number=\count318
 
 (C:\Users\solankiv\AppData\Roaming\MiKTeX\tex/latex/rerunfilecheck\rerunfileche
 ck.sty
@@ -349,9 +335,9 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 84.
 )
-\Hy@SectionHShift=\skip61
+\Hy@SectionHShift=\skip59
 ))
-Package hyperref Info: Option `breaklinks' set `true' on input line 17.
+Package hyperref Info: Option `breaklinks' set `true' on input line 18.
 
 (C:\Users\solankiv\AppData\Roaming\MiKTeX\tex/latex/matlab-prettifier\matlab-pr
 ettifier.sty
@@ -382,26 +368,26 @@ Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
 )
 (C:\Program Files\MiKTeX\tex/latex/listings\listings.sty
-\lst@mode=\count321
+\lst@mode=\count319
 \lst@gtempboxa=\box58
-\lst@token=\toks37
-\lst@length=\count322
-\lst@currlwidth=\dimen195
-\lst@column=\count323
-\lst@pos=\count324
-\lst@lostspace=\dimen196
-\lst@width=\dimen197
-\lst@newlines=\count325
-\lst@lineno=\count326
-\lst@maxwidth=\dimen198
+\lst@token=\toks36
+\lst@length=\count320
+\lst@currlwidth=\dimen193
+\lst@column=\count321
+\lst@pos=\count322
+\lst@lostspace=\dimen194
+\lst@width=\dimen195
+\lst@newlines=\count323
+\lst@lineno=\count324
+\lst@maxwidth=\dimen196
 
 (C:\Program Files\MiKTeX\tex/latex/listings\lstpatch.sty
 File: lstpatch.sty 2025/11/14 1.11b (Carsten Heinz)
 )
 (C:\Program Files\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
-\c@lstnumber=\count327
-\lst@skipnumbers=\count328
+\c@lstnumber=\count325
+\lst@skipnumbers=\count326
 \lst@framebox=\box59
 )
 (C:\Program Files\MiKTeX\tex/latex/listings\listings.cfg
@@ -415,13 +401,13 @@ Package: listings 2025/11/14 1.11b (Carsten Heinz)
     but found:
         2025/11/14 1.11b (Carsten Heinz)
     so I'm assuming it got fixed.
-\netBracketCount@mlpr=\count329
-\blkLvl@mlpr=\count330
-\blkLvlAtClassdef@mlpr=\count331
-\emHeight@mlpr=\skip62
-\jayDepth@mlpr=\skip63
-\sectionRuleOffset@mlpr=\skip64
-\toks@mlpr=\toks38
+\netBracketCount@mlpr=\count327
+\blkLvl@mlpr=\count328
+\blkLvlAtClassdef@mlpr=\count329
+\emHeight@mlpr=\skip60
+\jayDepth@mlpr=\skip61
+\sectionRuleOffset@mlpr=\skip62
+\toks@mlpr=\toks37
 ) (C:\Users\solankiv\AppData\Roaming\MiKTeX\tex/latex/cite\cite.sty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
@@ -441,38 +427,38 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: dvips.def on input line 106.
 )
-\Gin@req@height=\dimen199
-\Gin@req@width=\dimen256
+\Gin@req@height=\dimen197
+\Gin@req@width=\dimen198
 )
 (C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-dvips.def
 File: l3backend-dvips.def 2025-10-09 L3 backend support: dvips
 \l__pdfannot_backend_content_box=\box60
 \l__pdfannot_backend_model_box=\box61
-\g__pdfannot_backend_int=\count332
-\g__pdfannot_backend_link_int=\count333
-\g__pdfannot_backend_link_sf_int=\count334
+\g__pdfannot_backend_int=\count330
+\g__pdfannot_backend_link_int=\count331
+\g__pdfannot_backend_link_sf_int=\count332
 )
 (EESDPaper.aux)
 \openout1 = `EESDPaper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: dvips
@@ -512,25 +498,25 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 45.
+Package hyperref Info: Link coloring OFF on input line 46.
 (EESDPaper.out) (EESDPaper.out)
 \@outlinefile=\write3
 \openout3 = `EESDPaper.out'.
 
-\c@lstlisting=\count335
-LaTeX Font Info:    Trying to load font information for U+msa on input line 47.
+\c@lstlisting=\count333
+LaTeX Font Info:    Trying to load font information for U+msa on input line 48.
 
 
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 47.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 48.
 
 
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 58--59
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
 
  []
 
@@ -541,79 +527,63 @@ File: Figures/Onewasher.eps Graphic file (type eps)
  <Figures/Onewasher.eps>
 File: Figures/Photo_2units2U2D.eps Graphic file (type eps)
  <Figures/Photo_2units2U2D.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 85--87
+Underfull \hbox (badness 10000) in paragraph at lines 86--88
 
  []
 
 File: Figures/Forcedisponewasher.eps Graphic file (type eps)
 <Figures/Forcedisponewasher.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+Underfull \hbox (badness 10000) in paragraph at lines 98--99
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 99--100
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
 
  []
 
-File: Figures/washer1U.eps Graphic file (type eps)
-<Figures/washer1U.eps>
-File: Figures/washer2unit2U2D.eps Graphic file (type eps)
- <Figures/washer2unit2U2D.eps>
-Overfull \hbox (40.59105pt too wide) in paragraph at lines 137--138
-[]|[]| 
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
+
  []
 
-File: Figures/washer1D.eps Graphic file (type eps)
-<Figures/washer1D.eps>
-File: Figures/washer1U1D.eps Graphic file (type eps)
- <Figures/washer1U1D.eps>
-File: Figures/washer1unit2U2D.eps Graphic file (type eps)
- <Figures/washer1unit2U2D.eps>
-File: Figures/washer1unit3U3D.eps Graphic file (type eps)
 
-<Figures/washer1unit3U3D.eps> [3]
-Underfull \hbox (badness 10000) in paragraph at lines 151--152
+Underfull \hbox (badness 10000) in paragraph at lines 162--164
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 161--163
+Underfull \hbox (badness 10000) in paragraph at lines 195--196
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--195
+Underfull \hbox (badness 10000) in paragraph at lines 197--201
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--200
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 212--213
+Underfull \hbox (badness 10000) in paragraph at lines 218--219
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 217--218
+Underfull \hbox (badness 10000) in paragraph at lines 220--222
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 219--221
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 222--223
+Underfull \hbox (badness 10000) in paragraph at lines 223--224
 
  []
 
@@ -635,13 +605,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--66
 pli-ca-tions & So-lu-tions.''
  []
 
-[7]
+
 Underfull \hbox (badness 10000) in paragraph at lines 110--113
 [][]\OT1/cmr/m/n/10 Key Bellevilles Inc., ``Belleville spring washer ap-pli-ca-
 tions & so-lu-tions.''
  []
 
-) [8] (EESDPaper.aux)
+) [7] (EESDPaper.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-29>
@@ -650,12 +620,12 @@ Package rerunfilecheck Info: File `EESDPaper.out' has not changed.
 (rerunfilecheck)             Checksum: 598EB81BADAD68E44A3B21EBD1624D1D;2565.
  ) 
 Here is how much of TeX's memory you used:
- 13915 strings out of 467872
- 217564 string characters out of 5428460
- 652390 words of memory out of 5000000
- 42618 multiletter control sequences out of 15000+600000
+ 13639 strings out of 467872
+ 213085 string characters out of 5428460
+ 648838 words of memory out of 5000000
+ 42356 multiletter control sequences out of 15000+600000
  637241 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,13n,79p,1751b,615s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,11n,79p,1751b,620s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on EESDPaper.dvi (8 pages, 73740 bytes).
+Output written on EESDPaper.dvi (7 pages, 70176 bytes).
