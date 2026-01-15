@@ -1,1 +1,8 @@
+*.aux
+*.bbl
+*.dvi
+*.log
+*.out
+*.ps
+*.synctex
 
