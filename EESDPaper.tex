@@ -1,4 +1,4 @@
-\documentclass[a4paper]{article}
+\documentclass{article}
 
 \usepackage[margin=1in]{geometry} % full-width
 
@@ -7,10 +7,10 @@
 \usepackage{amsthm}
 \usepackage{amssymb}
 \usepackage[caption=false,font=normalsize]{subfig}
-\usepackage{booktabs} %%% for toprule, bottomrule in tables
-\usepackage{array}
-\usepackage{graphicx, color}
+%\usepackage{array}
+\usepackage{graphicx}
 \usepackage{multirow}
+\usepackage{booktabs} %%% for toprule, bottomrule in tables
 
 % Unicode
 \usepackage[utf8]{inputenc}
@@ -131,7 +131,7 @@ for example as illustrated in Table 1-2.
  \multicolumn{3}{c}{Units} & \multirow{2}{*}{Stack} \\
  Sr. No. & Configuration & Nomenclature & \\ \midrule
  1 & \includegraphics[scale=0.4]{washer1U.eps} & 1U & \\
- 2 & \includegraphics[scale=0.4]{washer1D.eps} & 1D & \multirow{4}{*}{\includegraphics[scale = 0.4]{washer2unit2U2D.eps}}\\
+ 2 & \includegraphics[scale=0.4]{washer1D.eps} & 1D & \multirow{4}{*}{\includegraphics[scale = 0.4]{washer2unit2U2D.eps}} \\
  3 & \includegraphics[scale=0.4]{washer1U1D.eps} & 1U1D & \\
  4 & \includegraphics[scale=0.4]{washer1unit2U2D.eps} & 2U2D & \\
  5 & \includegraphics[scale=0.4]{washer1unit3U3D.eps} & 3U3D &  \\

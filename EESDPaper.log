@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=latex 2026.1.14)  14 JAN 2026 17:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=latex 2026.1.14)  14 JAN 2026 17:38
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -171,36 +171,6 @@ Package caption Info: Standard document class detected.
 \sf@top=\skip60
 \sf@bottom=\skip61
 )
-(C:\Users\solankiv\AppData\Roaming\MiKTeX\tex/latex/booktabs\booktabs.sty
-Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen175
-\lightrulewidth=\dimen176
-\cmidrulewidth=\dimen177
-\belowrulesep=\dimen178
-\belowbottomsep=\dimen179
-\aboverulesep=\dimen180
-\abovetopsep=\dimen181
-\cmidrulesep=\dimen182
-\cmidrulekern=\dimen183
-\defaultaddspace=\dimen184
-\@cmidla=\count305
-\@cmidlb=\count306
-\@aboverulesep=\dimen185
-\@belowrulesep=\dimen186
-\@thisruleclass=\count307
-\@lastruleclass=\count308
-\@thisrulewidth=\dimen187
-)
-(C:\Program Files\MiKTeX\tex/latex/tools\array.sty
-Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
-\col@sep=\dimen188
-\ar@mcellbox=\box55
-\extrarowheight=\dimen189
-\NC@list=\toks30
-\extratabsurround=\skip62
-\backup@length=\skip63
-\ar@cellbox=\box56
-)
 (C:\Program Files\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -218,32 +188,40 @@ Package graphics Info: Driver file: dvips.def on input line 106.
 (C:\Program Files\MiKTeX\tex/latex/graphics-def\dvips.def
 File: dvips.def 2025/01/21 v3.2a Graphics/color driver for dvips
 ))
-\Gin@req@height=\dimen190
-\Gin@req@width=\dimen191
+\Gin@req@height=\dimen175
+\Gin@req@width=\dimen176
 )
-(C:\Program Files\MiKTeX\tex/latex/graphics\color.sty
-Package: color 2025/01/14 v1.3e Standard LaTeX Color (DPC)
-
-(C:\Program Files\MiKTeX\tex/latex/graphics-cfg\color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package color Info: Driver file: dvips.def on input line 149.
-
-(C:\Program Files\MiKTeX\tex/latex/graphics\dvipsnam.def
-File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
-)
-(C:\Program Files\MiKTeX\tex/latex/graphics\mathcolor.ltx))
 (C:\Users\solankiv\AppData\Roaming\MiKTeX\tex/latex/multirow\multirow.sty
 Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
-\multirow@colwidth=\skip64
-\multirow@cntb=\count309
-\multirow@dima=\skip65
-\bigstrutjot=\dimen192
+\multirow@colwidth=\skip62
+\multirow@cntb=\count305
+\multirow@dima=\skip63
+\bigstrutjot=\dimen177
+)
+(C:\Users\solankiv\AppData\Roaming\MiKTeX\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen178
+\lightrulewidth=\dimen179
+\cmidrulewidth=\dimen180
+\belowrulesep=\dimen181
+\belowbottomsep=\dimen182
+\aboverulesep=\dimen183
+\abovetopsep=\dimen184
+\cmidrulesep=\dimen185
+\cmidrulekern=\dimen186
+\defaultaddspace=\dimen187
+\@cmidla=\count306
+\@cmidlb=\count307
+\@aboverulesep=\dimen188
+\@belowrulesep=\dimen189
+\@thisruleclass=\count308
+\@lastruleclass=\count309
+\@thisrulewidth=\dimen190
 )
 (C:\Program Files\MiKTeX\tex/latex/base\inputenc.sty
 Package: inputenc 2024/02/08 v1.3d Input encoding file
-\inpenc@prehook=\toks31
-\inpenc@posthook=\toks32
+\inpenc@prehook=\toks30
+\inpenc@posthook=\toks31
 )
 (C:\Program Files\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip18
@@ -301,7 +279,7 @@ Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
-\@linkdim=\dimen193
+\@linkdim=\dimen191
 \Hy@linkcounter=\count312
 \Hy@pagecounter=\count313
 
@@ -329,7 +307,7 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4462.
 \c@Hy@tempcnt=\count315
 LaTeX Info: Redefining \url on input line 4801.
-\XeTeXLinkMargin=\dimen194
+\XeTeXLinkMargin=\dimen192
 
 (C:\Users\solankiv\AppData\Roaming\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -339,8 +317,8 @@ Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
 \Fld@menulength=\count316
-\Field@Width=\dimen195
-\Fld@charsize=\dimen196
+\Field@Width=\dimen193
+\Fld@charsize=\dimen194
 Package hyperref Info: Hyper figures OFF on input line 6078.
 Package hyperref Info: Link nesting OFF on input line 6083.
 Package hyperref Info: Hyper index ON on input line 6086.
@@ -358,10 +336,10 @@ File: hdvips.def 2025-07-12 v7.01o Hyperref driver for dvips
 
 (C:\Program Files\MiKTeX\tex/latex/hyperref\pdfmark.def
 File: pdfmark.def 2025-07-12 v7.01o Hyperref definitions for pdfmark specials
-\pdf@docset=\toks33
-\pdf@box=\box57
-\pdf@toks=\toks34
-\pdf@defaulttoks=\toks35
+\pdf@docset=\toks32
+\pdf@box=\box55
+\pdf@toks=\toks33
+\pdf@defaulttoks=\toks34
 \HyField@AnnotCount=\count320
 \Fld@listcount=\count321
 \c@bookmark@seq@number=\count322
@@ -377,7 +355,7 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 84.
 )
-\Hy@SectionHShift=\skip66
+\Hy@SectionHShift=\skip64
 ))
 Package hyperref Info: Option `breaklinks' set `true' on input line 19.
 
@@ -395,7 +373,6 @@ Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: dvips.def on input line 274.
-LaTeX Info: Redefining \color on input line 762.
 
 (C:\Program Files\MiKTeX\tex/latex/graphics\mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
@@ -409,17 +386,17 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
 )
 (C:\Program Files\MiKTeX\tex/latex/listings\listings.sty
 \lst@mode=\count323
-\lst@gtempboxa=\box58
-\lst@token=\toks36
+\lst@gtempboxa=\box56
+\lst@token=\toks35
 \lst@length=\count324
-\lst@currlwidth=\dimen197
+\lst@currlwidth=\dimen195
 \lst@column=\count325
 \lst@pos=\count326
-\lst@lostspace=\dimen198
-\lst@width=\dimen199
+\lst@lostspace=\dimen196
+\lst@width=\dimen197
 \lst@newlines=\count327
 \lst@lineno=\count328
-\lst@maxwidth=\dimen256
+\lst@maxwidth=\dimen198
 
 (C:\Program Files\MiKTeX\tex/latex/listings\lstpatch.sty
 File: lstpatch.sty 2025/11/14 1.11b (Carsten Heinz)
@@ -428,7 +405,7 @@ File: lstpatch.sty 2025/11/14 1.11b (Carsten Heinz)
 File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
 \c@lstnumber=\count329
 \lst@skipnumbers=\count330
-\lst@framebox=\box59
+\lst@framebox=\box57
 )
 (C:\Program Files\MiKTeX\tex/latex/listings\listings.cfg
 File: listings.cfg 2025/11/14 1.11b listings configuration
@@ -444,10 +421,10 @@ Package: listings 2025/11/14 1.11b (Carsten Heinz)
 \netBracketCount@mlpr=\count331
 \blkLvl@mlpr=\count332
 \blkLvlAtClassdef@mlpr=\count333
-\emHeight@mlpr=\skip67
-\jayDepth@mlpr=\skip68
-\sectionRuleOffset@mlpr=\skip69
-\toks@mlpr=\toks37
+\emHeight@mlpr=\skip65
+\jayDepth@mlpr=\skip66
+\sectionRuleOffset@mlpr=\skip67
+\toks@mlpr=\toks36
 ) (C:\Users\solankiv\AppData\Roaming\MiKTeX\tex/latex/cite\cite.sty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
@@ -455,8 +432,8 @@ Package: cite 2015/02/27  v 5.5
 )
 (C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-dvips.def
 File: l3backend-dvips.def 2025-10-09 L3 backend support: dvips
-\l__pdfannot_backend_content_box=\box60
-\l__pdfannot_backend_model_box=\box61
+\l__pdfannot_backend_content_box=\box58
+\l__pdfannot_backend_model_box=\box59
 \g__pdfannot_backend_int=\count334
 \g__pdfannot_backend_link_int=\count335
 \g__pdfannot_backend_link_sf_int=\count336
@@ -487,16 +464,16 @@ LaTeX Font Info:    ... okay on input line 46.
 *geometry* detected driver: dvips
 *geometry* verbose mode - [ preamble ] result:
 * driver: dvips
-* paper: a4paper
+* paper: <default>
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(72.26999pt, 452.9679pt, 72.26999pt)
-* v-part:(T,H,B)=(72.26999pt, 700.50687pt, 72.26999pt)
-* \paperwidth=597.50787pt
-* \paperheight=845.04684pt
-* \textwidth=452.9679pt
-* \textheight=700.50687pt
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=469.75502pt
+* \textheight=650.43001pt
 * \oddsidemargin=0.0pt
 * \evensidemargin=0.0pt
 * \topmargin=-37.0pt
@@ -504,7 +481,7 @@ LaTeX Font Info:    ... okay on input line 46.
 * \headsep=25.0pt
 * \topskip=10.0pt
 * \footskip=30.0pt
-* \marginparwidth=57.0pt
+* \marginparwidth=65.0pt
 * \marginparsep=11.0pt
 * \columnsep=10.0pt
 * \skip\footins=9.0pt plus 4.0pt minus 2.0pt
@@ -569,12 +546,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
+[3]
 File: Figures/washer1U.eps Graphic file (type eps)
-<Figures/washer1U.eps>
+ <Figures/washer1U.eps>
 File: Figures/washer1D.eps Graphic file (type eps)
  <Figures/washer1D.eps>
 File: Figures/washer2unit2U2D.eps Graphic file (type eps)
- <Figures/washer2unit2U2D.eps>
+
+<Figures/washer2unit2U2D.eps>
 Overfull \vbox (4.58229pt too high) detected at line 134
  []
 
@@ -584,7 +563,7 @@ File: Figures/washer1unit2U2D.eps Graphic file (type eps)
  <Figures/washer1unit2U2D.eps>
 File: Figures/washer1unit3U3D.eps Graphic file (type eps)
 
-<Figures/washer1unit3U3D.eps> [3]
+<Figures/washer1unit3U3D.eps>
 Underfull \hbox (badness 10000) in paragraph at lines 147--148
 
  []
@@ -599,12 +578,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 190--191
 
  []
 
-
+[5]
 Underfull \hbox (badness 10000) in paragraph at lines 192--196
 
  []
 
-[5]
+
 Underfull \hbox (badness 10000) in paragraph at lines 208--209
 
  []
@@ -619,12 +598,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 215--217
 
  []
 
-
+[6]
 Underfull \hbox (badness 10000) in paragraph at lines 218--219
 
  []
 
-(EESDPaper.bbl [6]
+(EESDPaper.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 30--33
 [][]\OT1/cmr/m/n/10 N. Blunt, ``The Dif-fer-ence Be-tween Disc Springs and Bell
 eville Wash-ers.''
@@ -633,7 +612,7 @@ eville Wash-ers.''
 
 Underfull \hbox (badness 10000) in paragraph at lines 30--33
 [][]$\OT1/cmr/m/n/10 https : / / www . spirol . com / assets / ^^Lles / disc[]w
-p[]dierences[]between[]disc[]springs[]and[]belleville[]
+p[]dierences[]between[]disc[]springs[]and[]belleville[]washers[]
  []
 
 
@@ -657,12 +636,12 @@ Package rerunfilecheck Info: File `EESDPaper.out' has not changed.
 (rerunfilecheck)             Checksum: 598EB81BADAD68E44A3B21EBD1624D1D;2565.
  ) 
 Here is how much of TeX's memory you used:
- 13430 strings out of 467872
- 209557 string characters out of 5428460
- 646834 words of memory out of 5000000
- 42128 multiletter control sequences out of 15000+600000
+ 13254 strings out of 467872
+ 206686 string characters out of 5428460
+ 646246 words of memory out of 5000000
+ 41964 multiletter control sequences out of 15000+600000
  637241 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,79p,1751b,556s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,12n,79p,1751b,552s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on EESDPaper.dvi (8 pages, 71468 bytes).
+Output written on EESDPaper.dvi (8 pages, 71236 bytes).
