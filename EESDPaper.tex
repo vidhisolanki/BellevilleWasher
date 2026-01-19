@@ -11,11 +11,11 @@
 \usepackage{graphicx}
 \usepackage{multirow, makecell}
 \usepackage{booktabs} %%% for toprule, bottomrule in tables
-
 % Unicode
 \usepackage[utf8]{inputenc}
 \usepackage[hyphens]{url}
 \usepackage{hyperref}
+\usepackage{cleveref} 
 \hypersetup{breaklinks=true}
 \urlstyle{same}
 \usepackage{matlab-prettifier}
@@ -306,19 +306,143 @@ Washer & Configuration & Pre-load (\% of flattening load)\\ \midrule
 \multirow{3}{*}{K1875-G-086} & \multirow{3}{*}{2 units of 2U2D} & 0lb (0\%) \\
 & & 500lb (25\%) \\
 & & 1000lb (50\%) \\ \midrule
-\multirow{2}{*}{K1750-J-057} & \multirow{3}{*}{3 units of 3U3D} & 500lb (17\%) \\
+\multirow{2}{*}{K1750-J-057} & \multirow{2}{*}{3 units of 3U3D} & 500lb (17\%) \\
 & & 1500lb (50\%) \\
 \bottomrule
 %\multicolumn{3}{l}{\small{$^1$Obtained from \cite{kote2019model}}}
 \end{tabular}
 \end{center}
 \end{table}
-For each configuration, a sequence of tests consisting of low-level broad-band random input (for baseline system identification) and the CERL ground motion with increasing amplitude levels (culminating at 0.5g) were applied first in the X direction and then in the Y direction. The 5\%-damped test response spectra of the applied motion are shown in Figure 4-6.
+For each configuration, a sequence of tests consisting of low-level broad-band random input (for baseline system identification) and the CERL ground motion with increasing amplitude levels (culminating at 0.5g) were applied first in the X direction and then in the Y direction. The 5\%-damped test response spectra of the applied motion are shown in Figure \ref{fig:TRSRRS005}.
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.5]{TRSRRS005.eps}
+    \caption{5\%-damped test response spectra of applied CERL motion compared with required response 
+spectrum}
+    \label{fig:TRSRRS005}
+\end{figure}
+\subsection{Correlating measured forces and accelerations}
+Various measured forces and accelerations are correlated to gain confidence in the measurements to then compare with analysis predictions in section \ref{sec:nonlinmodelanalysis}. Consider the free body diagram in Figure \ref{fig:FBDCut1}. The dimensions used in this free body diagram are summarized in Table \ref{tab:CVTinertiaFBD}. The equilibrium equations
+\begin{equation}\label{eqn:FBDs}
+  \begin{aligned} 
+  \sum F_X = & 0 \implies V = m\xtddot \\
+  \sum M = 0 \implies \Mspool = & -\Izero\ddot{\theta}-VL = -\Izero\ddot{\theta}-m\xtddot L
+\end{aligned}
+\end{equation}
+The correlation between the left and right hand sides of the second of equations ~\eqref{eqn:FBDs}, each of which is obtained using independent measurements, is verified in Figure 4-8, demonstrating consistency.
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.6]{FBDCut1.eps}
+    \caption{Free body diagram with mid-spool cut}
+    \label{fig:FBDCut1}
+\end{figure}
+
+\begin{table}[ht]
+\caption{\label{tab:CVTinertiaFBD} Summary of CVT inertia properties}
+\begin{center}   
+\begin{tabular}{cm{9.5cm}c} 
+ \toprule
+Dimension & Description & Value (in)\\ \midrule
+$r$ & Distance between CVT base and mid spool & 11 \\ \midrule
+$L$ & Distance between CVT center of mass and mid spool & 46-1/16 \\ \midrule
+$l$ & Distance between CVT center of mass and center of rotation; this 
+is obtained by fitting the equation $\ddot{x}_\text{g}+\ddot{\theta}=\xtddot$ & 38 \\ 
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+
+Next consider the free body diagrams shown in Figure \ref{fig:FBDCuts23}. In this figure, $F_{i\text{t}}$ and $F_{i\text{b}}$ stand for the force in the top and bottom washer stacks at corner $i$, and $F_i$ for the force in the corresponding guide rod. Superscript ``pre'' denotes the preload component of these forces and $\Delta$ denotes the change due to the CVT weight and during dynamic response. Since each assembly of washers under preload is in equilibrium,
+\begin{equation}\label{eqn:preload}
+  F^{\text{pre}}_{i\text{b}}=F^{\text{pre}}_{i\text{t}}=F^{\text{pre}}_{i}
+\end{equation}
+Furthermore,
+\begin{equation}\label{eqn:preload2}
+  F^{\text{pre}}_{\text{1}}=F^{\text{pre}}_{\text{2}}=F^{\text{pre}}_{\text{3}}=F^{\text{pre}}_{\text{4}}
+\end{equation}
+since all the assemblies are preloaded to the same level. Summing moments about the center of rotation $O$, 
+\begin{equation}
+\begin{split}
+  & \Mspool - (F^{\text{pre}}_{\text{1}} + \Delta F_{\text{1}}+ F^{\text{pre}}_{\text{4}} + \Delta F_{\text{4}})b  + (F^{\text{pre}}_{\text{2}} + \Delta F_{\text{2}}+ F^{\text{pre}}_{\text{3}} + \Delta F_{\text{3}})b  \\
+  & + (F^{\text{pre}}_{\text{1t}} - \Delta F_{\text{1t}}- F^{\text{pre}}_{\text{4t}} + \Delta F_{\text{4t}})b - (F^{\text{pre}}_{\text{2t}} - \Delta F_{\text{2t}}- F^{\text{pre}}_{\text{3t}} + \Delta F_{\text{3t}})b - Vr= 0
+\end{split}
+\end{equation}
+Using equation \eqref{eqn:preload} to cancel out the $F^{\text{pre}}_{i}$ and $F^{\text{pre}}_{i\text{t}}$, and substituting for $V$ from equation \eqref{eqn:FBDs},
+\begin{equation}\label{eqn:Mspool}
+  \Mspool-(\Delta F_\text{1}+\Delta F_\text{4})b + (\Delta F_\text{2}+\Delta F_\text{3})b - (\Delta F_\text{1t}+\Delta F_\text{4t})b - (\Delta F_\text{2t}+\Delta F_\text{3t})b - m\xtddot r = 0
+\end{equation}
+A further assumption is made that
+\begin{equation}
+  \Delta F_i = \Delta F_{i\text{b}} = \Delta F_{i\text{t}} 
+\end{equation}
+This does not follow from equilibrium, but is taken to be true based on symmetry/compatibility of top and bottom stack deformations. Then equation \eqref{eqn:Mspool} becomes
+\begin{equation}
+  \Mspool=2(\Delta F_\text{1}+\Delta F_\text{4} - \Delta F_\text{2}-\Delta F_\text{3})b+m\xtddot r
+\end{equation}
+Using equation \eqref{eqn:preload2}, this can be further written as
+\begin{equation}
+  \Mspool=\underbrace{2(F_\text{1}-F_\text{2} -F_\text{3}+F_\text{4})b}_{\MCVT}+m\xtddot r
+\end{equation}
+where $F_i=F^{\text{pre}}_{i}+\Delta F_i$ is the directly the force measured by LWA $i$. Verifying this relationship, which again involves multiple independent measurements, adds further confidence in the 
+measured data for comparison with analysis. In particular, this confirms the thinking that the in-situ behavior of the washer stacks can be determined from the materials testing machine measurements. This comparison is shown in Figure \ref{fig:FBDCut4}. A final free body diagram, Figure \ref{fig:FBDCut4}, is considered in relation to the insulator base moment. The mass and mass moment of inertia of the insulator alone are not known, however its center of mass is assumed to be at mid-height. Summing the moments about the insulator base,
+\begin{equation}
+  M_{\text{ins}} = -I_{\text{0ins}}\ddot{\theta}-m_{\text{ins}}\ddot{x}_{\text{t,ins}}L_1
+\end{equation}
+Substituting the kinematics, $\ddot{x}_{\text{t,ins}} = \ddot{x}_{\text{g}}+L_2\ddot{\theta}$,
+\begin{equation}\label{eqn:Mins}
+M_{\text{ins}} = - \underbrace{(I_{\text{0ins}}+m_{\text{ins}}L_\text{1}L_\text{2})}_{I_\text{ins}} \ddot{\theta} - m_{\text{ins}}L_\text{1}\ddot{x}_{\text{g}}
+\end{equation}
+The insulator mass, $m_\text{ins}$, and the net mass moment of inertia, $I_\text{ins}$ are known. Equation \eqref{eqn:Mins} is 
+used to fit them to measure data. The fit values are $m_{\text{ins}}=$360/386.4lb-s$^2$/in (about 40\% of the total mass of the CVT) and $I_\text{ins}=$3,500lb-in-s$^2$. These values are used when comparing analysis results to measured insulator base moment. The measured insulator base moments are shown in Figure 4-12 and Figure 4-13.
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.6]{FBDCuts23.eps}
+    \caption{Free body diagrams relating moment measured at the spool with moment estimated using LWAs}
+    \label{fig:FBDCuts23}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.6]{FBDCut4.eps}
+    \caption{Free body diagram used to relate insulator base moment to measured accelerations; $L_1$ is the mid-height of the insulator, $L_1=$in; $L_2$ is the distance from the center of rotation to the center of mass of the insulator, $L_2=$in.}
+    \label{fig:FBDCut4}
+\end{figure}
 
 \section{Nonlinear modeling and analysis}\label{sec:nonlinmodelanalysis}
+In this section, a nonlinear model is developed for the CVT installed on Belleville washer stacks. The CVT is modeled as a rigid body, and a hysteretic model is used to represent the moment-rotation behavior resulting from the aggregate action of the washer stacks (the type of moment-rotation hysteretic behavior seen in the measurements of Figure 4-11).
+\subsection{From stack force-displacement to system moment-rotation}
+The moment-rotation hysteresis behavior can be obtained from the washer stack force-displacement response, whose measure was discussed in section \ref{sec:washerstackforcedisp}, using the process depicted in Figure 5-1. An example of this process is illustrated in Figure 5-2. The specific example shown in Figure 5-2 corresponds to a low preload (25\% of flattening). In this condition, when the washer stacks on one side reach the highest deformation (bottom left of Figure 5-2), the stacks on the other side relax entirely, losing preload (bottom right of Figure 5-2). The net effect is a softening of the moment-rotation behavior near the extremes (top right of Figure 5-2).
+
+\subsection{Modeling moment-rotation hysteresis}
+The moment-rotation behavior decomposed into two parallel components – one elastic and one hysteretic as illustrated in Figure 5-3. The split is given by
+\begin{equation}\label{eqn:MCVT}
+  \MCVT=K\thetaw+M_\text{HYS}
+\end{equation}
+for cases with sufficient preload as in Figure 5-3(a) and by
+\begin{equation}\label{eqn:MCVT2}
+  \MCVT=K tanh(\alpha \thetaw)+M_\text{HYS}
+\end{equation}
+for cases with insufficient preload as in Figure 5-3(b), the tanh function capturing the S shape. The hysteretic component is represented using what is commonly referred to as the Bouc-Wen model \cite{bouc1967forced, wen1976method} (for a description of this model using notation similar to that used here, see \cite{sivaselvan2000hysteretic, sivaselvan2004nonlinear}, and is given by
+\begin{equation}\label{eqn:MHYS}
+  \dot{M}_\text{HYS}=k\left(1- \left| \frac{M_\text{HYS}}{M_\text{yield}}\right|^N (\eta + (1-\eta)sgn(M_\text{HYS}\dot{\theta}_\text{w})) \right)\dot{\theta}_\text{w}
+\end{equation}
+where $M_\text{yield}$ is the yield moment, and $N$ and $\eta$ are parameters that control the shape of the hysteresis. For an explanation of these parameters, see \cite{constantinou1987dynamics}. Figure 5-4 shows a comparison of the model with the measured moment-rotation behavior when the model is driven by the measured rotation of the CVT relative to the spool plate ($\thetaw$). In constructing the full system model, the flexibility of the spool plate must be incorporated as well; this is recognized when comparing the magnitudes of the plate deformation (see Table \ref{tab:deriveresponsequant}), washer deformation and total rotation of the CVT in Figure 5-5.
+\subsection{Summary of nonlinear dynamic model}
+Combining the moment-rotation model of equations \eqref{eqn:MCVT} and \eqref{eqn:MCVT2} or \eqref{eqn:MHYS} with the equation of motion of the CVT (considered as a rigid body), and including the flexibility of the spool plate results in the full nonlinear model of the Belleville washer-protected CVT:
 
 \section{Equivalent linear modeling}\label{sec:equilinmodel}
 
+\subsection{Response spectrum interpretation}
+It can be seen from Table 6-1 that the insulator base moment is reduced in all configurations relative to the fixed base case, and by over 50\% in the $X$ direction and by over 25\% in the $Y$ direction for the cases with sufficient preload. This however comes at the expense of greater terminal displacement, about 50\% greater for the cases with highest preload. These effects are similar to that of seismic isolation. These effects can be better understood by mapping the frequencies and damping ratios of the different configurations on a spectral plot as seen in Figure \ref{fig:ExpRRS}. For each configuration, the abscissa is the frequency and the ordinate is the spectral acceleration obtained from the equations in \cite{IEEE693} for the damping ratio of that configuration.
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.6]{ExpRRS.eps}
+    \caption{Frequencies and damping ratios corresponding to different Belleville washer configurations overplotted on the 2\%- and 5\%-damped required response spectrum (RRS) from IEEE 693-2018\cite{IEEE693}.}
+    \label{fig:ExpRRS}
+\end{figure}
+The picture conveys the relative effectiveness of the different Belleville washer configurations with respect to the reference configuration. There is a frequency reduction that for the configurations tested does not play a major role in reducing base moments. The biggest effect is the increased damping. While such deductions can be made from the figure, the main takeaway is that with the tools developed in this project, a similar evaluation can be done for any other arrangement of washers by modeling and analysis. For example, a different configuration may be designed that further reduces frequency while increasing damping, trading off lower insulator base moment with increased terminal displacement.
 \section{Summary and concluding remarks}\label{sec:conclusion}
 
 \subsection{Executive summary}\label{subsec:execsummary}
