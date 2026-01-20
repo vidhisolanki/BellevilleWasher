@@ -317,12 +317,23 @@ v &  Deflection of spool plate &  & Difference of rows ii and iii above \\
     \label{fig:LWA}
 \end{figure}
 \subsection{Determination of CVT inertia properties}
-For further analysis, the mass, mass moment of inertia and center of mass position of the CVT must be determined. The mass is obtained simply from the measured weight. The center of mass position is determined by balancing the CVT horizontally using a crane. The mass moment of inertia is computed from the frequency measured by mounting the CVT on springs of known stiffness (Figure \ref{fig:CVTonspring}) using the method outlined in Figure 4-5. A summary of the inertia properties of the CVT is shown in Table \ref{tab:CVTinertia}.
+For further analysis, the mass, mass moment of inertia and center of mass position of the CVT must be determined. The mass is obtained simply from the measured weight. The center of mass position is determined by balancing the CVT horizontally using a crane. The mass moment of inertia is computed from the frequency measured by mounting the CVT on springs of known stiffness (Figure \ref{fig:CVTonspring}) using the method outlined in Figure \ref{fig:CVTonspringAnalysis}. A summary of the inertia properties of the CVT is shown in Table \ref{tab:CVTinertia}.
 \begin{figure}
     \centering
     \includegraphics[scale=0.62]{CVTonspring.eps}
     \caption{CVT mounted on springs to estimate mass moment of inertia indirectly from measured frequency}
     \label{fig:CVTonspring}
+\end{figure}
+
+\begin{figure}
+\centering
+\subfloat[]{\includegraphics[scale=0.6]{k2120_X_freevib.eps}%
+\label{fig:k2120Xfreevib}}
+\hfil
+\subfloat[]{\includegraphics[scale=0.6]{CVTonspringsFBD.eps}%
+\label{fig:CVTonspringFBD}}
+\caption{Acceleration measured when CVT is mounted on springs and the resulting frequency fit, and process to compute CVT mass moment of inertia from measured frequency; the dimension b is 6.375in in the $X$ direction and 9.25in in the $Y$ direction.}
+\label{fig:CVTonspringAnalysis}
 \end{figure}
 
 \begin{table}[ht]
@@ -464,7 +475,7 @@ In this section, a nonlinear model is developed for the CVT installed on Bellevi
 The moment-rotation hysteresis behavior can be obtained from the washer stack force-displacement response, whose measure was discussed in section \ref{sec:washerstackforcedisp}, using the process depicted in Figure 5-1. An example of this process is illustrated in Figure 5-2. The specific example shown in Figure 5-2 corresponds to a low preload (25\% of flattening). In this condition, when the washer stacks on one side reach the highest deformation (bottom left of Figure 5-2), the stacks on the other side relax entirely, losing preload (bottom right of Figure 5-2). The net effect is a softening of the moment-rotation behavior near the extremes (top right of Figure 5-2).
 
 \subsection{Modeling moment-rotation hysteresis}
-The moment-rotation behavior decomposed into two parallel components – one elastic and one hysteretic as illustrated in Figure 5-3. The split is given by
+The moment-rotation behavior decomposed into two parallel components – one elastic and one hysteretic as illustrated in Figure \ref{fig:K187550percentmeasuredhysteresis}. The split is given by
 \begin{equation}\label{eqn:MCVT}
   \MCVT=K\thetaw+M_\text{HYS}
 \end{equation}
@@ -476,7 +487,54 @@ for cases with insufficient preload as in Figure 5-3(b), the tanh function captu
 \begin{equation}\label{eqn:MHYS}
   \dot{M}_\text{HYS}=k\left(1- \left| \frac{M_\text{HYS}}{M_\text{yield}}\right|^N (\eta + (1-\eta)sgn(M_\text{HYS}\dot{\theta}_\text{w})) \right)\dot{\theta}_\text{w}
 \end{equation}
-where $M_\text{yield}$ is the yield moment, and $N$ and $\eta$ are parameters that control the shape of the hysteresis. For an explanation of these parameters, see \cite{constantinou1987dynamics}. Figure 5-4 shows a comparison of the model with the measured moment-rotation behavior when the model is driven by the measured rotation of the CVT relative to the spool plate ($\thetaw$). In constructing the full system model, the flexibility of the spool plate must be incorporated as well; this is recognized when comparing the magnitudes of the plate deformation (see Table \ref{tab:deriveresponsequant}), washer deformation and total rotation of the CVT in Figure 5-5.
+where $M_\text{yield}$ is the yield moment, and $N$ and $\eta$ are parameters that control the shape of the hysteresis. For an explanation of these parameters, see \cite{constantinou1987dynamics}. Figure \ref{fig:K187550percentmodelmeasuredhysteresis} shows a comparison of the model with the measured moment-rotation behavior when the model is driven by the measured rotation of the CVT relative to the spool plate ($\thetaw$). In constructing the full system model, the flexibility of the spool plate must be incorporated as well; this is recognized when comparing the magnitudes of the plate deformation (see Table \ref{tab:deriveresponsequant}), washer deformation and total rotation of the CVT in Figure 5-5.
+
+\begin{figure}
+\centering
+\subfloat{\includegraphics[scale=0.4]{k187522u2d_X50percentpreload_MCVT_thetaw_0.5g_measured.eps}%
+\label{fig:k187522u2dXMCVTthetaw0.5measuredN002}}
+\hfil
+\subfloat{\includegraphics[scale=0.4]{k187522u2d_X50percentpreload_MCVT_thetaw_0.5g_measured.eps}%
+\label{fig:k187522u2dXMHYSthetaw0.5measuredN0022}}
+\hfil
+\subfloat{\includegraphics[scale=0.4]{k187522u2d_X50percentpreload_MCVT_thetaw_0.5g_measured.eps}%
+\label{fig:k187522u2dXMHYSthetaw0.5gmeasuredN0023}}
+\hfil
+\subfloat{\includegraphics[scale=0.4]{k187522u2d_X25percentpreload_MCVT_thetaw_0.5g_measured.eps}%
+\label{fig:k187522u2dXMCVTthetaw0.5measuredN0024}}
+\hfil
+\subfloat{\includegraphics[scale=0.4]{k187522u2d_X25percentpreload_MCVT_thetaw_0.5g_measured.eps}%
+\label{fig:k187522u2dXMHYSthetaw0.5measuredN00225}}
+\hfil
+\subfloat{\includegraphics[scale=0.4]{k187522u2d_X25percentpreload_MCVT_thetaw_0.5g_measured.eps}%
+\label{fig:k187522u2dXMHYSthetaw0.5gmeasuredN0026}}
+\caption{Parallel decomposition of moment-rotation behavior into elastic and hysteretic components (example shown for 2 units of 2U2D).}
+\label{fig:K187550percentmeasuredhysteresis}
+\end{figure}
+
+\begin{figure}
+\centering
+\subfloat{\includegraphics[scale=0.4]{k187522u2d_X50percentpreload_MCVT_thetaw_0.5g_modelmeasured_N002.eps}%
+\label{fig:k187522u2dXMCVTthetaw0.5gmodelmeasuredN002}}
+\hfil
+\subfloat{\includegraphics[scale=0.4]{k187522u2d_X50percentpreload_MHYS_thetaw_0.5g_modelmeasured_N002.eps}%
+\label{fig:k187522u2dXMHYSthetaw0.5gmodelmeasuredN002}}
+\hfil
+\subfloat{\includegraphics[scale=0.4]{k187522u2d_X50percentpreload_MHYS_thetaw_0.5g_modelmeasured_N002.eps}%
+\label{fig:k187522u2dXMHYSthetaw0.5gmodelmeasuredN0022}}
+\hfil
+\subfloat{\includegraphics[scale=0.4]{k187522u2d_X50percentpreload_MCVT_thetaw_0.5g_modelmeasured_N002.eps}%
+\label{fig:k187522u2dXMCVTthetaw0.5gmodelmeasuredN0023}}
+\hfil
+\subfloat{\includegraphics[scale=0.4]{k187522u2d_X50percentpreload_MHYS_thetaw_0.5g_modelmeasured_N002.eps}%
+\label{fig:k187522u2dXMHYSthetaw0.5gmodelmeasuredN0024}}
+\hfil
+\subfloat{\includegraphics[scale=0.4]{k187522u2d_X50percentpreload_MHYS_thetaw_0.5g_modelmeasured_N002.eps}%
+\label{fig:k187522u2dXMHYSthetaw0.5gmodelmeasuredN00225}}
+\caption{Comparison on model and measured moment-rotation behavior when the model is driven by the measured $\thetaw$ as input (example shown for 2 units of 2U2D).}
+\label{fig:K187550percentmodelmeasuredhysteresis}
+\end{figure}
+
 \subsection{Summary of nonlinear dynamic model}
 Combining the moment-rotation model of equations \eqref{eqn:MCVT} and \eqref{eqn:MCVT2} or \eqref{eqn:MHYS} with the equation of motion of the CVT (considered as a rigid body), and including the flexibility of the spool plate results in the full nonlinear model of the Belleville washer-protected CVT:
 \begin{equation}\label{eqn:EOMs}
@@ -509,7 +567,7 @@ where these formulae parallel equations (17.2-4) and (17.2-5) of Chapter 17 of A
 \subfloat{\includegraphics[scale=0.7]{EquiStiffnessDamping.eps}%
 \label{fig:EquiStiffnessDamping1}}
 \hfil
-\subfloat{\includegraphics[scale=0.5]{EquiStiffnessDamping2.eps}%
+\subfloat{\includegraphics[scale=0.5]{k187522u2d_X25percentpreload_MCVT_thetaw_0.5g_measured_annotated.eps}%
 \label{fig:EquiStiffnessDamping2}}
 \caption{Concept of graphically obtaining equivalent stiffness and damping ratio.}
 \label{fig:EquiStiffnessDamping}
