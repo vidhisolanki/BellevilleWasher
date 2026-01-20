@@ -75,7 +75,8 @@ is given by \cite{shigley2004standard, almen1936uniform}
 \subfloat[Shape and dimension specifications (source: \cite{shigley2004standard})]{\includegraphics[scale=0.8]{Onewasher.eps}%
 \label{fig:Onewasher}}
 \hfil
-\subfloat[Example of a stack with series-parallel arrangement]{\raisebox{1.2em}{\includegraphics[scale=1]{Photo_2units2U2D.eps}%
+\subfloat[Example of a stack with series-parallel arrangement]
+{\raisebox{1.2em}{\includegraphics[scale=1]{Photo_2units2U2D.eps}%
 \label{fig:Photo2units2U2D}}}
 \caption{Belleville washer shape, dimensions and stack consisting of series-parallel arrangement}
 \label{fig:Washerstack}
@@ -187,12 +188,59 @@ measured response.
 \section{Cyclic force-displacement behavior of washer stacks}\label{sec:washerstackforcedisp}
 This chapter is on the measurement of force-displacement behavior of Belleville washer stacks. As will be seen in sections \ref{sec:nonlinmodelanalysis} and \ref{sec:equilinmodel}, this is the primary information required to predict the seismic response of rigid equipment (besides mass, moment of inertia of the equipment itself and support structure stiffness).\\
 
-The force displacement response of a washer stack is obtained here by applying cyclic compressive loading to the stack in a materials testing machine. At first, this was done by simply compressing the stack between loading plates as shown in Figure 3-1(a). The resulting force-displacement curves of Figure 3-1(b) showed changes in slope that weren’t observed in force-displacement measurements of the same stack in shake table tests (the special instrument designed to measure this response in situ under the equipment in the shake table test is discussed in section \ref{sec:shaketableexperiments}). This is likely because of slight misalignment between washers in the stack initially that corrects itself during the loading. To avoid this, an alternative approach was devised, where the compressive loading was applied to the stack through a loading frame and guiding rod as illustrated in Figure 3-2(a). This arrangement is closer to how the washer stack is installed under the equipment. The guiding rod prevents any initial misalignment and subsequent realignment. The resulting force-displacement measurement, shown in Figure 3-2(b), does not have any unexpected changes in slope. Indeed the in situ measurements from the shake table tests follow these curves closely as seen in Figure 3-3.\\
-%%%%%%%%%% Figure 3-1
-%%%%%%%%%% Figure 3-2
+The force displacement response of a washer stack is obtained here by applying cyclic compressive loading to the stack in a materials testing machine. At first, this was done by simply compressing the stack between loading plates as shown in Figure \ref{fig:MTSstack1}. The resulting force-displacement curves of Figure \ref{fig:K187522U2DMTSnoLWA} showed changes in slope that weren’t observed in force-displacement measurements of the same stack in shake table tests (the special instrument designed to measure this response in situ under the equipment in the shake table test is discussed in section \ref{sec:shaketableexperiments}). This is likely because of slight misalignment between washers in the stack initially that corrects itself during the loading. To avoid this, an alternative approach was devised, where the compressive loading was applied to the stack through a loading frame and guiding rod as illustrated in Figure \ref{fig:MTSstackLWA1}. This arrangement is closer to how the washer stack is installed under the equipment. The guiding rod prevents any initial misalignment and subsequent realignment. The resulting force-displacement measurement, shown in Figure \ref{fig:K187522U2DMTSLWA}, does not have any unexpected changes in slope. Indeed the in situ measurements from the shake table tests follow these curves closely as seen in Figure \ref{fig:K18753MTSvsST}. Figure \ref{fig:K1750MTS} shows force-displacement curves for two configurations of the K1750-J-057 washers. They exhibit the reduction in stiffness with loading noted in Figure \ref{fig:Forcedisponewasher} due to their higher $h$/$t$ ratio.\\
+\begin{figure}
+\centering
+\subfloat[Washer stack compressed directly 
+between loading plates]{\raisebox{3.5em}{\includegraphics[scale=0.65]{MTSstack.eps}%
+\label{fig:MTSstack1}}}
+\hfil
+\subfloat[Measured force-displacement hysteresis
+]{\includegraphics[scale=0.6]{K187522U2D_MTS_noLWA.eps}%
+\label{fig:K187522U2DMTSnoLWA}}
+\caption{Washer stack force-displacement response measurement by \textit{compressing the stack directly} in the materials testing machine; force-displacement response exhibits unexpected changes in slope.}
+\label{fig:K187522U2D_MTS_noLWA}
+\end{figure}
+
+\begin{figure}
+\centering
+\subfloat[Washer stack compressed through a 
+loading frame with guiding rod]{\raisebox{3.5em}{\includegraphics[scale=0.65]{MTSstackLWA.eps}%
+\label{fig:MTSstackLWA1}}}
+\hfil
+\subfloat[Measured force-displacement hysteresis
+]{\includegraphics[scale=0.6]{K187522U2D_MTS_LWA.eps}%
+\label{fig:K187522U2DMTSLWA}}
+\caption{Washer stack force-displacement response measurement by \textit{compressing the stack through a loading frame with guiding rod}; this is closer to how to washers are mounted under the equipment, and the force-displacement response is clean.}
+\label{fig:MTSstackLWA}
+\end{figure}
+
 %%%%%%%%%% Figure 3-3
+\begin{figure}
+\centering
+\subfloat[2 units of 2U2D K1875-G-086]{\includegraphics[scale=0.6]{K187522U2D_MTSvsST.eps}%
+\label{fig:K187522U2DMTSvsST}}
+\hfil
+\subfloat[3 units of 3U3D K1875-G-086
+]{\includegraphics[scale=0.6]{K187533U3D_MTSvsST.eps}%
+\label{fig:K187533U3DMTSvsST}}
+\caption{Measured force-displacement curves for two configurations. The legend MTS denotes measurement from the materials testing machine through the frame with guiding rod. The other curves are in situ measurements from the shake table a different preload levels. The in-situ measurements follow the testing machine results closely, confirming that the washer stack response can be characterized fully using simply a materials testing machine.}
+\label{fig:K18753MTSvsST}
+\end{figure}
+
 %%%%%%%%%% Figure 3-4
-Figure 3-4 shows force-displacement curves for two configurations of the K1750-J-057 washers. They exhibit the reduction in stiffness with loading noted in Figure \ref{fig:Forcedisponewasher} due to their higher $h$/$t$ ratio.
+\begin{figure}
+\centering
+\subfloat[2 units of 2U2D K1750-J-057]{\includegraphics[scale=0.6]{K175022U2D_MTS.eps}%
+\label{fig:K175022U2DMTS}}
+\hfil
+\subfloat[2 units of 3U3D K1750-J-057
+]{\includegraphics[scale=0.6]{K175023U3D_MTS_withLWA.eps}%
+\label{fig:K175023U3DMTSwithLWA}}
+\caption{Measured force-displacement curves for two configurations with the K1750-J-057 washers. They have a softening behavior because of their larger $h$/$t$ ratio (cf. Figure \ref{fig:Forcedisponewasher})}
+\label{fig:K1750MTS}
+\end{figure}
+
 
 \section{Shake table experiments}\label{sec:shaketableexperiments}
 In this chapter, shake table experiments on the CVT equipped with Belleville washer stacks are described. The experimental setup, instrumentation, and washer installation process are detailed. The primary purpose of these experiments is to obtain measurements in support of the analysis procedure outlined in section \ref{sec:analysisprocedure}. Consequently, special instruments were used to measure the washer response in situ. Instrumentation was also designed with redundancy in mind, so that the same quantity is measured by multiple means and can be cross-checked. Some other checks such as sums of forces are moments are perform to confirm the integrity of the measurements.
@@ -422,7 +470,7 @@ The moment-rotation behavior decomposed into two parallel components – one ela
 \end{equation}
 for cases with sufficient preload as in Figure 5-3(a) and by
 \begin{equation}\label{eqn:MCVT2}
-  \MCVT=K tanh(\alpha \thetaw)+M_\text{HYS}
+  \MCVT=K \text{tanh}(\alpha\thetaw)+M_\text{HYS}
 \end{equation}
 for cases with insufficient preload as in Figure 5-3(b), the tanh function capturing the S shape. The hysteretic component is represented using what is commonly referred to as the Bouc-Wen model \cite{bouc1967forced, wen1976method} (for a description of this model using notation similar to that used here, see \cite{sivaselvan2000hysteretic, sivaselvan2004nonlinear}, and is given by
 \begin{equation}\label{eqn:MHYS}
@@ -431,8 +479,57 @@ for cases with insufficient preload as in Figure 5-3(b), the tanh function captu
 where $M_\text{yield}$ is the yield moment, and $N$ and $\eta$ are parameters that control the shape of the hysteresis. For an explanation of these parameters, see \cite{constantinou1987dynamics}. Figure 5-4 shows a comparison of the model with the measured moment-rotation behavior when the model is driven by the measured rotation of the CVT relative to the spool plate ($\thetaw$). In constructing the full system model, the flexibility of the spool plate must be incorporated as well; this is recognized when comparing the magnitudes of the plate deformation (see Table \ref{tab:deriveresponsequant}), washer deformation and total rotation of the CVT in Figure 5-5.
 \subsection{Summary of nonlinear dynamic model}
 Combining the moment-rotation model of equations \eqref{eqn:MCVT} and \eqref{eqn:MCVT2} or \eqref{eqn:MHYS} with the equation of motion of the CVT (considered as a rigid body), and including the flexibility of the spool plate results in the full nonlinear model of the Belleville washer-protected CVT:
+\begin{equation}\label{eqn:EOMs}
+  \begin{aligned} 
+  \text{Equation of motion of CVT: } (\Izero+ml^2)\ddot{\theta}+\MCVT = & 0 ml\ddot{x}_\text{g} \\
+  \text{Hysteretic model (equation \eqref{eqn:MHYS} rewritten): } \dot{M}_\text{HYS}= & k(1-H_1H_2)\dot{\theta}_\text{w}
+\end{aligned}
+\end{equation}
+where $H_1 = \left| \frac{M_\text{HYS}}{M_\text{yield}}\right|^N$, $H_2=(\eta + (1-\eta)sgn(M_\text{HYS}\dot{\theta}_\text{w}))$, $\MCVT$ given either by equation \eqref{eqn:MCVT} or \eqref{eqn:MCVT2}, the spool plate deformation, $\theta_\text{p}=\frac{\MCVT}{K_\text{p}}$ ($
+K_\text{p}$ p being the spool plate stiffness), $\thetaw=\theta-\theta_\text{p}$ and $\dot{\theta}_\text{w}=\left(\frac{K_\text{p}}{K_\text{p}+k(1-H_1H_2)+K}\right)\dot{\theta}$ for sufficient preload and $\dot{\theta}_\text{w}=\left(\frac{K_\text{p}}{K_\text{p}+k(1-H_1H_2)+K\alpha(1-\text{tanh}^2(\alpha\thetaw))}\right)\dot{\theta}$ for insufficient preload. Solutions to the differential equations \eqref{eqn:EOMs} together with these auxiliary equations are computed using the solver \texttt{ode15s} in MATLAB \cite{MATLAB}. The insulator moment can be calculated as an output of the analysis using equation \eqref{eqn:Mins}.
+\subsection{Analysis results}
+As examples, analysis results are shown for 2 cases, but with the 2 units of 2U2D configuration under 0.5g CERL motion in the X direction, one case with 50\% preload and another with 25\% preload in Figure 5-6 and Figure 5-7.
 
 \section{Equivalent linear modeling}\label{sec:equilinmodel}
+In the previous section, the Belleville washer-protected CVT system was analyzed using a nonlinear dynamic procedure. In this section, an alternate approach is presented using an equivalent linear approach. This approach may be better suited for practical use as well as provides insights in terms of system frequency and damping ratio. First, an equivalent linear model obtained by fitting to experimental measurements is presented; the frequencies and damping ratios so obtained are used as reference for the second approach. In the second 
+approach, equivalent stiffnesses and damping ratios are obtained graphically from the moment-rotation hysteresis curves.
+\subsection{Equivalent frequency and damping ratio from measurements}\label{subsec:equistiffdamp}
+An equivalent linear model can be obtained from experimental measurements by fitting a linear model to it. Here, this is done using the subspace linear system identification method \cite{van2012subspace}. Figure 6-2 shows a comparison of such a linear fit with measured responses. Table \ref{tab:subspace} summarizes equivalent frequencies and damping ratios for all the configurations tested. Approximate equivalent stiffness, frequency and damping ratio can be obtained graphically as illustrated in Figure \ref{fig:EquiStiffnessDamping}. The equivalent stiffness, $k_{\text{eq}}$, is obtained as the ratio of the difference 
+between the positive and negative peak moments and the different between the peak positive and negative rotations. The frequency is then
+\begin{equation}
+  f = \frac{1}{2\pi}\sqrt{\frac{k_\text{eq}}{\Izero+m\hCG^2}}
+\end{equation}
+and the damping ratio is obtained by equating the area of the hysteresis, $A_\text{h}$, to that of a viscous damper undergoing the same peak displacement at steady state with frequency $f$ \cite{ChopraDynamics}
+\begin{equation}
+  \xi = \frac{A_\text{h}}{2\pi k_\text{eq}u^2_\text{0}}
+\end{equation}
+where these formulae parallel equations (17.2-4) and (17.2-5) of Chapter 17 of ASCE 7-16 on Seismically Isolated Structures \cite{loads2017minimum}.
+\begin{figure}
+\centering
+\subfloat{\includegraphics[scale=0.7]{EquiStiffnessDamping.eps}%
+\label{fig:EquiStiffnessDamping1}}
+\hfil
+\subfloat{\includegraphics[scale=0.5]{EquiStiffnessDamping2.eps}%
+\label{fig:EquiStiffnessDamping2}}
+\caption{Concept of graphically obtaining equivalent stiffness and damping ratio.}
+\label{fig:EquiStiffnessDamping}
+\end{figure}
+\begin{table}[ht]
+\caption{\label{tab:subspace} Summary of findings from experimental measurements and equivalent linear modeling for 0.5g CERL excitation. Damping ratios in parentheses denote those obtained by the procedure in \ref{subsec:equistiffdamp}.}
+\begin{center}   
+\begin{tabular}{m{2.3cm}cccccccccccc} 
+ \toprule
+Configuration & \multicolumn{2}{c}{\makecell{CVT fixed \\ on spool \\ (reference)}} & \multicolumn{6}{c}{\makecell{K1875-G-086\\ 2 units of 2U2D}} & \multicolumn{4}{c}{\makecell{K1875-G-086 \\3 units of 3U3D}} \\ \midrule
+Preload level & \multicolumn{2}{c}{-}  & \multicolumn{2}{c}{0\%} & \multicolumn{2}{c}{25\% (500lbs)} & \multicolumn{2}{c}{50\% (1000lbs)} & \multicolumn{2}{c}{17\% (500lbs)} & \multicolumn{2}{c}{50\% (1500lbs)} \\ \midrule
+Direction of excitation & $X$ & $Y$ & $X$ & $Y$ & $X$ & $Y$ & $X$ & $Y$ & $X$ & $Y$ & $X$ & $Y$ \\ \midrule
+Natural frequency (Hz) & 6.9 & 9.4 & \makecell{2.9 \\ (3.0)} & \makecell{4.0\\ (4.3)} & \makecell{3.6 \\(3.5)} & \makecell{5.1\\ (5.1)} & \makecell{4.1\\ (3.8)} & \makecell{5.5\\ (5.4)} & \makecell{3.6\\ (3.6)} & \makecell{5.1\\ (5.0)} & \makecell{4.5\\ (4.7)} & \makecell{5.9\\ (5.6)} \\ \midrule
+Damping ratio (\%) & 0.5 & 0.6 & \makecell{3.9 \\ (3.6)} & \makecell{3.7\\ (3.4)} & \makecell{6.5 \\(7.1)} & \makecell{6.4\\ (8.7)} & \makecell{9.9\\ (14.2)} & \makecell{8.1\\ (13.6)} & \makecell{7.8\\ (8.2)} & \makecell{7.3\\ (9.9)} & \makecell{9.3\\ (24.2)} & \makecell{6.0\\ (20.0)} \\ \midrule
+Maximum insulator base moment ($\times10^4$lb-in) & 5.1 & 4.5 & 3.5 & 4.0&2.9& 3.2 & 2.4& 3.3& 2.7& 3.0& 2.4& 2.9 \\ \midrule
+Maximum relative terminal displacement (in) & 0.9 & 0.6 & 3.4 & 2.1 &1.8& 1.1 & 1.4& 1.0& 1.8& 1.1& 1.2& 0.9 \\ 
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table}
 
 \subsection{Response spectrum interpretation}
 It can be seen from Table 6-1 that the insulator base moment is reduced in all configurations relative to the fixed base case, and by over 50\% in the $X$ direction and by over 25\% in the $Y$ direction for the cases with sufficient preload. This however comes at the expense of greater terminal displacement, about 50\% greater for the cases with highest preload. These effects are similar to that of seismic isolation. These effects can be better understood by mapping the frequencies and damping ratios of the different configurations on a spectral plot as seen in Figure \ref{fig:ExpRRS}. For each configuration, the abscissa is the frequency and the ordinate is the spectral acceleration obtained from the equations in \cite{IEEE693} for the damping ratio of that configuration.
@@ -446,9 +543,7 @@ The picture conveys the relative effectiveness of the different Belleville washe
 \section{Summary and concluding remarks}\label{sec:conclusion}
 
 \subsection{Executive summary}\label{subsec:execsummary}
-A modeling procedure has been developed to predict the seismic response of rigid equipment such as CVTs equipped with Belleville washer stacks at the base for seismic protection. The procedure allows for nonlinear dynamic analysis or an equivalent linear analysis, and is outlined in section \ref{sec:analysisprocedure}. The starting points are (a) the force-displacement hysteretic behavior of an individual stack that can be readily obtained by cyclic loading in a materials test machine, (b) inertia properties of the CVT – mass, mass moment of inertial and center of mass location. With this, the seismic response can be predicted reliably. This has been validated with experiments on an earthquake simulator (shake table). Special instrumentation was developed to obtained detailed in situ measurements of the behavior of the washer stacks in the shake table experiments. Validation using these measurements provides confidence that the analysis procedure can be used to inform decisions when installing Belleville washer devices in the field. The process also parallels procedures in ASCE 7-16 for seismic isolators.\\
-
-The washer stacks essentially act as seismic isolators, reducing the frequency and increasing the damping. They are effective in reducing the insulator base moment. As is the case with seismic isolation systems, reduction is base moment has to be traded off with increase in terminal displacement.
+A modeling procedure has been developed to predict the seismic response of rigid equipment such as CVTs equipped with Belleville washer stacks at the base for seismic protection. The procedure allows for nonlinear dynamic analysis or an equivalent linear analysis, and is outlined in section \ref{sec:analysisprocedure}. The starting points are (a) the force-displacement hysteretic behavior of an individual stack that can be readily obtained by cyclic loading in a materials test machine, (b) inertia properties of the CVT – mass, mass moment of inertial and center of mass location. With this, the seismic response can be predicted reliably. This has been validated with experiments on an earthquake simulator (shake table). Special instrumentation was developed to obtained detailed in situ measurements of the behavior of the washer stacks in the shake table experiments. Validation using these measurements provides confidence that the analysis procedure can be used to inform decisions when installing Belleville washer devices in the field. The process also parallels procedures in ASCE 7-16 for seismic isolators. The washer stacks essentially act as seismic isolators, reducing the frequency and increasing the damping. They are effective in reducing the insulator base moment. As is the case with seismic isolation systems, reduction is base moment has to be traded off with increase in terminal displacement.
 
 \subsection{Outstanding research questions}\label{subsec:outstandingquestions}
 Some outstanding research questions remain:\\
